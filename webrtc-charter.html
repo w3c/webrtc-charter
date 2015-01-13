@@ -286,20 +286,28 @@
 
 	<dl>
 	<dt><a href="http://www.w3.org/html/wg/">HTML Working Group</a></dt>
-	<dd>The HTML Working Group defines a number of markup elements and APIs that serves as the basis on which the RTC APIs will be developed; in particular, the outcome of this group might require extensions to the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags</dd>
+	<dd>The HTML Working Group defines a number of markup elements and APIs that serves as the basis on which the RTC APIs have been developed; in particular, several specifications of this group extends the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements</dd>
 	<dt><a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a></dt>
-	<dd>Some of the Web Applications Working Group APIs (such as the Web Sockets API) are likely to serve as inspiration or starting points for the APIs developed by the RTC Working Group.</dd>
-	<dt><a href="http://www.w3.org/2009/dap/">Device APIs &amp; Policy Working Group</a></dt>
-	<dd>The DAP Working Group on Media Capture APIs will require coordination across the two groups.</dd>
-	<dt><a href="http://www.w3.org/2010/web-notifications/">Web Notifications Working Group</a></dt>
-	<dd>The abilty of notifying users of incoming communications made possible by the work in the Web Notifications Working Group will be critical to the deployment of Web Real Time Communications.</dd>
-	<dt><a href="http://www.w3.org/2005/Incubator/audio/">Audio Incubator Group</a></dt>
-	<dd>The API under development in the Audio Incubator Group is relevant to the expected work on an Audio Stream API</dd>
+	<dd>Some of the Web Applications Working Group APIs (such as the Web Sockets API) have served as inspiration or starting points for the APIs developed by the RTC Working Group. The work on Push Notifications provides an important feature for many WebRTC use cases. In addition, all the APIs developed by this group are based on WebIDL which the Web Applications Working Group is specifying.</dd>
+	<dt><a href="http://www.w3.org/2009/dap/">Device APIs Working Group</a></dt>
+	<dd>The Device APIs Working Group jointly develops the media capture-related APIs with this group.</dd>
+	<dt><a href="http://www.w3.org/2011/audio/">Audio Working Group</a></dt>
+	<dd>The API developed by the Audio Working Group builds upon the MediaStream object built by this group; further collaboration on the management of audio output device is expected</dd>
+        <dt><a href="http://www.w3.org/2011/webappsec/">Web Application Security Working Group</a></dt>
+        <dd>The Web Application Security Working Group is developing guidance on APIs that expose sensitive information, and an API to manage permissions, both of which matter to several of this group specifications</dd>
+        <dt><a href="http://www.w3.org/2012/webcrypto/">Web Cryptography API</a></dt>
+        <dd>WebRTC connections are encrypted end-to-end; collaboration is expected with the Web Cryptography Working Group on exposing and manipulating some of the cryptography functions used</dd>
+        <dt><a href="http://www.w3.org/2014/secondscreen/"> Second Screen Presentation Working Group</a></dt>
+        <dd>The Second Screen Presentation Working Group is developing APIs to allow rendering of media on secondary devices; potential overlap with features enabled by the Audio Output Device APIs will need to be looked at</dd>
 	<dt>
 	    <a href="http://www.w3.org/WAI/PF/" shape="rect">WAI Protocols and Formats Working Group</a></dt>
 	<dd>Reviews from the WAI PF Working Group will be required to ensure the APIs allow to create an accessible user experience.</dd>
         <dt><a href="http://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
         <dd>Work on gathering use cases and requirements for Home Networking scenarios within the Web and TV Interest Group may uncover aspects that affect the design of real-time communications functions. The RTC Working Group will coordinate with the Web and TV Interest Group on these use cases and requirements as appropriate.</dd>
+        <dt><a href="http://www.w3.org/Privacy/">Privacy Interest Group</a></dt>
+        <dd>Several of the specifications developed by this group have potential impact on the privacy of users; reviews from the privacy interest group will be sought on these specifications</dd>
+        <dt><a href="http://www.w3.org/Security/IG/">Web Security Interest Group</a></dt>
+        <dd>Several of the specifications developed by this group have a complex impact on the security model of the Web; reviews from the Web Security Interest Group will be sought.</dd>
 </dl>
 
 	<h3>External Groups</h3>
