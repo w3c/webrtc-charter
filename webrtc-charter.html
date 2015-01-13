@@ -87,7 +87,27 @@
 <dd>API functions to establish peer-to-peer connections between Web browsers, independent of the network protocols used to establish the connections between peers.</dd>
 </dl>
 
-<p>The working group may decide to group the specified functions in one or more specifications.</p>
+<p>The working group may decide to group the specified functions in one or more specifications. The Working Group has already started and will continue work on the following specifications:</p>
+<dl>
+<dt>WebRTC 1.0: Real-time Communication Between Browsers</dt>
+<dd>JavaScript APIs to allow media to be sent to and received from another browser or device implementing the appropriate set of real-time protocols</dd>
+<dt>Identifiers for WebRTC's Statistics API</dt>
+<dd>JavaScript APIs that allow access to statistical information about a peer-to-peer connection established via the WebRTC API</dd>
+</dl>
+<p>as well as on the following specifications jointly developed with the <a href="http://www.w3.org/2009/dap/">Device APIs Working Group</a>:</p>
+<dt>Media Capture and Streams</dt>
+<dd>JavaScript APIs that allow local media, including audio and video, to be requested from a platform</dd>
+<dt>MediaStream Recording</dt>
+<dd>a JavaScript API to record MediaStreams</dd>
+<dt>MediaStream Image Capture</dt>
+<dd>a JavaScript API to capture still images from a video MediaStream</dd>
+<dt>Media Capture Depth Stream Extensions</dt>
+<dd>An extension to the Media Capture and Streams API to capture depth streams (e.g. from 3D cameras)</dd>
+<dt>HTMLMediaElement extension: MediaStream generation</dt>
+<dd>An extension to HTML’s HTMLMediaElement to allow generating a MediaStream from an existing audio or video element.</dd>
+<dt>Audio Output Devices API</dt>
+<dd>JavaScript APIs that let a Web application manage how audio is rendered on the user audio output devices</dd>
+</dl>
 
 
 <p>This work will be done in collaboration with the IETF. The W3C will define APIs to ensure that application developers can control the components or the architecture for selection and profiling of the wire protocols that will be produced by the IETF Real-Time Communication in WEB-browsers (RTCWeb) Working Group. While the specified API Functions will not constrain implementations into supporting a specific profile, they will be compatible with the Profile that will be specified by the RTCWeb Working Group.</p> 
@@ -134,9 +154,6 @@
                 <abbr title="First Working Draft">FPWD</abbr> 
               </th> 
               <th rowspan="1" colspan="1"> 
-                <abbr title="Last Call Working Draft">LC</abbr> 
-              </th> 
-              <th rowspan="1" colspan="1"> 
                 <abbr title="Candidate Recommendation">CR</abbr> 
               </th> 
               <th rowspan="1" colspan="1"> 
@@ -147,23 +164,115 @@
               </th> 
             </tr> 
             <tr> 
-              <th rowspan="1" colspan="1"> 
-                RTC API Functions
+              <th rowspan="1" colspan="1">
+                Media Capture and Streams
               </th> 
               <td class="WD1" rowspan="1" colspan="1"> 
-                Q3 2011
+                <a href="http://www.w3.org/TR/2011/WD-webrtc-20111027/">2011-10-27</a>
               </td> 
-              <td class="LC" rowspan="1" colspan="1"> 
-                Q2 2012
-              </td> 
-              <td class="CR" rowspan="1" colspan="1"> 
-                Q4 2012
+              <td class="CR" rowspan="1" colspan="1"> Q2 2015
               </td> 
               <td class="PR" rowspan="1" colspan="1"> 
-                Q4 2012
               </td> 
               <td class="REC" rowspan="1" colspan="1"> 
-                Q1 2013
+              </td> 
+            </tr> 
+            <tr> 
+              <th rowspan="1" colspan="1"> 
+                WebRTC 1.0: Real-time Communication Between Browsers
+              </th> 
+              <td class="WD1" rowspan="1" colspan="1"> 
+                <a href="http://www.w3.org/TR/2011/WD-webrtc-20111027/">2011-10-27</a>
+              </td> 
+              <td class="CR" rowspan="1" colspan="1"> Q2 2015
+              </td> 
+              <td class="PR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="REC" rowspan="1" colspan="1"> 
+              </td> 
+            </tr> 
+            <tr> 
+              <th rowspan="1" colspan="1"> 
+                MediaStream Recording
+              </th> 
+              <td class="WD1" rowspan="1" colspan="1"> 
+                <a href="http://www.w3.org/TR/2013/WD-mediastream-recording-20130205/">2013-02-25</a>
+              </td> 
+              <td class="CR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="PR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="REC" rowspan="1" colspan="1"> 
+              </td> 
+            </tr> 
+            <tr> 
+              <th rowspan="1" colspan="1"> 
+                MediaStream Image Capture
+              </th> 
+              <td class="WD1" rowspan="1" colspan="1"> 
+                <a href="http://www.w3.org/TR/2013/WD-image-capture-20130709/">2013-07-09</a>
+              </td> 
+              <td class="CR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="PR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="REC" rowspan="1" colspan="1"> 
+              </td> 
+            </tr> 
+            <tr> 
+              <th rowspan="1" colspan="1"> 
+                Media Capture Depth Stream Extensions
+              </th> 
+              <td class="WD1" rowspan="1" colspan="1"> 
+                <a href="http://www.w3.org/TR/2014/WD-mediacapture-depth-20141007/">2014-10-07</a>
+              </td> 
+              <td class="CR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="PR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="REC" rowspan="1" colspan="1"> 
+              </td> 
+            </tr> 
+            <tr> 
+              <th rowspan="1" colspan="1"> 
+                Identifiers for WebRTC's Statistics API
+              </th> 
+              <td class="WD1" rowspan="1" colspan="1"> 
+                <a href="http://www.w3.org/TR/2014/WD-webrtc-stats-20141021/">2°14-10-21</a>
+              </td> 
+              <td class="CR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="PR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="REC" rowspan="1" colspan="1"> 
+              </td> 
+            </tr> 
+            <tr> 
+              <th rowspan="1" colspan="1"> 
+                HTMLMediaElement extension: MediaStream generation
+              </th> 
+              <td class="WD1" rowspan="1" colspan="1"> 
+                Q1 2015
+              </td> 
+              <td class="CR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="PR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="REC" rowspan="1" colspan="1"> 
+              </td> 
+            </tr> 
+            <tr> 
+              <th rowspan="1" colspan="1"> 
+                Audio output API
+              </th> 
+              <td class="WD1" rowspan="1" colspan="1"> 
+                Q1 2015
+              </td> 
+              <td class="CR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="PR" rowspan="1" colspan="1"> 
+              </td> 
+              <td class="REC" rowspan="1" colspan="1"> 
               </td> 
             </tr> 
           </tbody> 
