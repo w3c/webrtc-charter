@@ -21,7 +21,7 @@
     <strong>mission</strong> of the Web Real-Time Communications Working Group, part of
     the <a href="http://www.w3.org/2007/uwa/Activity.html">Ubiquitous Web Applications Activity</a>, is to define client-side APIs to enable Real-Time Communications in Web browsers.</p>
 
-    <p>These APIs should enable building applications that can be run inside a browser, requiring no extra downloads or plugins, that allow communication between parties using audio, video and supplementary real-time communication, without having to use intervening servers (unless needed for firewall traversal, or for providing intermediary services).</p>
+    <p>These APIs should enable building applications that can be run inside a browser, requiring no extra downloads or plugins, that allow communication between parties using audio, video and supplementary real-time communication, without having to use intervening servers (unless needed for firewall traversal, or for providing intermediary services). APIs enabling supplementary functions, such as recording, image capture and screen sharing are also in scope.</p>
 
     <div class="noprint">
     <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/47318/join">Join the Web Real-Time Communications Working Group</a>.</p>
@@ -43,8 +43,8 @@
 
 	<p>Enabling real-time communications between Web browsers require the following client-side technologies to be available:</p>
 <ul>
-<li>API functions to explore device capabilities, e.g. camera, microphone, speakers</li>
-<li>API functions to capture media from local devices (camera and microphone)</li>
+<li>API functions to explore device capabilities, e.g. camera, microphone, speakers,</li>
+<li>API functions to capture media from local devices (e.g. camera and microphone, but also output devices such as a screen),</li>
 <li>API functions for encoding and other processing of those media streams,</li>
 <li>API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal</li>
 <li>API functions for decoding and processing (including echo cancelling, stream synchronization and a number of other functions) of those streams at the incoming end,</li>
@@ -70,7 +70,7 @@
 <p>The working group will deliver specifications that cover at least the following functions, unless they are found to be fully specified within other working groups' finished results:</p>
 <dl>
 <dt>Media Stream Functions</dt>
-<dd>API functions to manipulate media streams for interactive real-time communications, connecting various processing functions to each other, and to media devices and network connections, including media manipulation functions for e.g. allowing to synchronize streams.</dd>
+<dd>API functions to manipulate media streams for interactive real-time communications, connecting various processing functions to each other, and to media devices and network connections, including media manipulation functions for e.g. allowing to synchronize streams. Supplementary functions such as recording of media streams are also in scope.</dd>
 <dt>Audio Stream Functions</dt>
 <dd>An extension of the Media Stream Functions to process audio streams, to enable features such as automatic gain control, mute functions and echo cancellation.</dd>
 <dt>Video Stream Functions</dt>
@@ -78,7 +78,7 @@
 <dt>Functional Component Functions</dt>
 <dd>API functions that allow to query for the components present in an implementation, instantiate them, and connect them to media streams.</dd>
 <dt>P2P Connection Functions</dt>
-<dd>API functions to establish peer-to-peer connections between Web browsers, independent of the network protocols used to establish the connections between peers.</dd>
+<dd>API functions to establish peer-to-peer connections between Web browsers, independent of the network protocols used to establish the connections between peers. Included in this category are also API functions to allow identification of the peer.</dd>
 </dl>
 
 <p>The working group may decide to group the specified functions in one or more specifications. The Working Group has already started and will continue work on the following specifications:</p>
