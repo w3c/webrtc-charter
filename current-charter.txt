@@ -1,0 +1,148 @@
+OLD
+Web Real-Time Communications Working Group Charter
+
+The mission of the Web Real-Time Communications Working Group, part of the Ubiquitous Web Applications Activity, is to define client-side APIs to enable Real-Time Communications in Web browsers.
+
+These APIs should enable building applications that can be run inside a browser, requiring no extra downloads or plugins, that allow communication between parties using audio, video and supplementary real-time communication, without having to use intervening servers (unless needed for firewall traversal, or for providing intermediary services).
+
+Join the Web Real-Time Communications Working Group.
+
+End date	30 June 2015 [updated]
+Confidentiality	Proceedings are public
+Initial Chairs	
+Harald Alvestrand
+Stefan Håkansson
+Team Contacts
+(FTE %: 10)	Dominique Hazaël-Massieux [updated]
+Usual Meeting Schedule	Teleconferences: approximately 1 per week 
+Face-to-face: up to 3-4 per year
+
+Scope
+
+Enabling real-time communications between Web browsers require the following client-side technologies to be available:
+
+API functions to explore device capabilities, e.g. camera, microphone, speakers (currently in scope for the Device APIs & Policy Working Group)
+API functions to capture media from local devices (camera and microphone) (currently in scope for the Device APIs & Policy Working Group)
+API functions for encoding and other processing of those media streams,
+API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal
+API functions for decoding and processing (including echo cancelling, stream synchronization and a number of other functions) of those streams at the incoming end,
+Delivery to the user of those media streams via local screens and audio output devices (partially covered with HTML5)
+
+Success Criteria
+
+To advance to Proposed Recommendation, each specification is expected to have two independent implementations of each feature defined in the specification.
+
+To advance to Proposed Recommendation, interoperability between the independent implementations (that is, bidirectional audio and video communication between the implementations) should be demonstrated.
+
+Out of Scope
+
+The definition of the network protocols used to establish the connections between peers is out of scope for this group; in general, it is expected that protocols considerations will be handled in the IETF.
+
+The definition of any new codecs for audio and video is out of scope.
+
+Deliverables
+
+Recommendation-Track Deliverables
+
+The working group will deliver specifications that cover at least the following functions, unless they are found to be fully specified within other working groups' finished results:
+
+Media Stream Functions
+API functions to manipulate media streams for interactive real-time communications, connecting various processing functions to each other, and to media devices and network connections, including media manipulation functions for e.g. allowing to synchronize streams.
+Audio Stream Functions
+An extension of the Media Stream Functions to process audio streams, to enable features such as automatic gain control, mute functions and echo cancellation.
+Video Stream Functions
+An extension of the Media Stream Functions to process video streams, to enable features such as bandwidth limiting, image manipulation or "video mute".
+Functional Component Functions
+API functions that allow to query for the components present in an implementation, instantiate them, and connect them to media streams.
+P2P Connection Functions
+API functions to establish peer-to-peer connections between Web browsers, independent of the network protocols used to establish the connections between peers.
+The working group may decide to group the specified functions in one or more specifications.
+
+This work will be done in collaboration with the IETF. The W3C will define APIs to ensure that application developers can control the components or the architecture for selection and profiling of the wire protocols that will be produced by the IETF Real-Time Communication in WEB-browsers (RTCWeb) Working Group. While the specified API Functions will not constrain implementations into supporting a specific profile, they will be compatible with the Profile that will be specified by the RTCWeb Working Group.
+
+The specified API Functions and the requirements on their implementation must offer functionality that ensures that users' expectations of privacy and control over their devices are met - this includes, but is not limited to, ensuring that users are assured at all times that they know what media they are transmitting, and are able to find out who they are transmitting media to.
+
+Similarly, all the deliverables must address issues of security - this includes, but is not limited to, ensuring that arbitrary UDP packets cannot be sent to arbitrary destinations and ports. The security and privacy goals and requirements will be developed in coordination with the IETF RTCWeb Working Group.
+
+Other Deliverables
+
+A comprehensive test suite for all features of a specification is necessary to ensure the specification's robustness, consistency, and implementability, and to promote interoperability between User Agents. Therefore, each specification must have a companion test suite, which should be completed by the end of the Last Call phase, and must be completed, with an implementation report, before transition from Candidate Recommendation to Proposed Recommendation. Additional tests may be added to the test suite at any stage of the Recommendation track, and the maintenance of a implementation report is encouraged.
+
+Other non-normative documents may be created such as:
+
+Primers
+
+Requirements and use case document for specifications.
+Non-normative group notes
+Given sufficient resources, this Working Group should review other working groups' deliverables that are identified as being relevant to the Working Group's mission.
+
+Milestones
+
+Milestones
+Note: The group will document significant changes from this initial schedule on the group home page.
+Specification	FPWD	LC	CR	PR	Rec
+RTC API Functions	Q3 2011	Q2 2012	Q4 2012	Q4 2012	Q1 2013
+
+Dependencies and Liaisons
+
+W3C Groups
+
+HTML Working Group
+The HTML Working Group defines a number of markup elements and APIs that serves as the basis on which the RTC APIs will be developed; in particular, the outcome of this group might require extensions to the <audio> and <video> tags
+Web Applications Working Group
+Some of the Web Applications Working Group APIs (such as the Web Sockets API) are likely to serve as inspiration or starting points for the APIs developed by the RTC Working Group.
+Device APIs & Policy Working Group
+The DAP Working Group on Media Capture APIs will require coordination across the two groups.
+Web Notifications Working Group
+The abilty of notifying users of incoming communications made possible by the work in the Web Notifications Working Group will be critical to the deployment of Web Real Time Communications.
+Audio Incubator Group
+The API under development in the Audio Incubator Group is relevant to the expected work on an Audio Stream API
+WAI Protocols and Formats Working Group
+Reviews from the WAI PF Working Group will be required to ensure the APIs allow to create an accessible user experience.
+Web and TV Interest Group
+Work on gathering use cases and requirements for Home Networking scenarios within the Web and TV Interest Group may uncover aspects that affect the design of real-time communications functions. The RTC Working Group will coordinate with the Web and TV Interest Group on these use cases and requirements as appropriate.
+
+External Groups
+
+IETF Real-Time Communication in WEB-browsers group (RTCWeb)
+The RTC APIs developed by this group will build upon the protocols and formats developed in the IETF RTCWeb Working Group.
+IETF CODEC group
+One possible audio codec for use with this API is the one being developed in the IETF.
+
+Participation
+
+To be successful, the Web Real-Time Communications Working Group is expected to have 10 or more active participants for its duration. Effective participation to Web Real-Time Communications Working Group is expected to consume one work day per week for each participant; two days per week for editors. The Web Real-Time Communications Working Group will allocate also the necessary resources for building Test Suites for each specification.
+
+Participants are reminded of the Good Standing requirements of the W3C Process.
+
+Communication
+
+This group primarily conducts its work on the public mailing list public-webrtc@w3.org (archives).
+
+The group uses a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and participants of the group, for Member-only discussions in special cases when a particular participant requests such a discussion.
+
+Information about the group (deliverables, participants, face-to-face meetings, teleconferences, etc.) is available from the Web Real-Time Communications Working Group home page.
+
+Decision Policy
+
+As explained in the Process Document (section 3.3), this group will seek to make decisions when there is consensus. When the Chair puts a question and observes dissent, after due consideration of different opinions, the Chair should record a decision (possibly after a formal vote) and any objections, and move on.
+
+Patent Policy
+
+This Working Group operates under the W3C Patent Policy (5 February 2004 Version). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
+
+For more information about disclosure obligations for this group, please see the W3C Patent Policy Implementation.
+
+About this Charter
+
+This charter for the Web Real-Time Communications Working Group has been created according to section 6.2 of the Process Document. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+
+This charter was prepared as part of discussions related to the RTC Web Workshop in October 2010.
+
+This charter is a revision of the initial charter reviewed by W3C Membership. Main changes since initial version are a clarification of the expectation in terms of usual meeting schedule, a clarification of the relationship between W3C and IETF groups and a new liaison with the Web and TV Interest Group for coordination on home networking scenarios. The milestones section was also completed.
+
+This charter was updated on March 13 2012 to reflect the change of Staff Contact for the group.
+
+This charter was updated on March 6 2013 to reflect the change of the end of the charter from February 28 2013 to February 28 2015.
+
+This charter was updated on March 25 2015 to reflect the change of the end of the charter from February 28 2015 to June 30 2015.
