@@ -1,4 +1,3 @@
-MID
 Web Real-Time Communications Working Group Charter
 
 The mission of the Web Real-Time Communications Working Group, part of the Ubiquitous Web Applications Activity, is to define client-side APIs to enable Real-Time Communications in Web browsers.
