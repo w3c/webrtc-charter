@@ -84,7 +84,7 @@ As the name implies, WebRTC 1.0: Real-time Communication Between Browsers is to 
 
 The specified API Functions and the requirements on their implementation must offer functionality that ensures that users' expectations of privacy and control over their devices are met - this includes, but is not limited to, ensuring that users can control what local devices an application can access for capturing media, and are able to at any time revoke that access.
 
-Similarly, all the deliverables must address issues of security - this includes, but is not limited to, ensuring that arbitrary UDP packets cannot be sent to arbitrary destinations and ports. The security and privacy goals and requirements will be developed in coordination with the IETF RTCWeb Working Group.
+Similarly, all the deliverables must address issues of security. The security and privacy goals and requirements will be developed in coordination with the IETF RTCWeb Working Group.
 
 Similarly, all deliverables must address issues of accessibility including relevant requirements listed in the Media User Accessibility Requirements document (MAUR), such as multiple well-synchronized instances of the same media type. The accessibility goals and requirements will be developed in coordination with the Accessible Platform Architectures Working Group.
 
