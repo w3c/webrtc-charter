@@ -110,16 +110,20 @@
 
 <p>This work will be done in collaboration with the IETF. The W3C will define APIs to ensure that application developers can control the components or the architecture for selection and profiling of the wire protocols that will be produced by the IETF Real-Time Communication in WEB-browsers (RTCWeb) Working Group. While the specified API Functions will not constrain implementations into supporting a specific profile, they will be compatible with the Profile that will be specified by the RTCWeb Working Group.</p>
 
-<p>As the name implies, WebRTC 1.0: Real-time Communication Between Browsers is to be considered as a first version of APIs for real-time communication. The working group will, once WebRTC 1.0: Real-time Communication Between Browsers reaches Candidate Recommendation, consider working on a new set of object-oriented APIs for real-time communication to produce an object-oriented specification to follow 1.0. The activities in the ORTC (Object Real-time Communications) Community Group indicate that there is interest in a new set of APIs. As part of this consideration, the group will reevaluate its deliverables and milestones, and may reconsider its scope.</p>
+<p>As the name indicates, WebRTC 1.0: Real-time Communication Between Browsers is a first version of APIs for real-time communication, sometimes referred to as the PeerConnection API. The activities in the ORTC (Object Real-time Communications) Community Group indicate that there is interest in additional APIs to provide more direct control over WebRTC than what the PeerConnection API offers.</p>
 
-<p>In developing an Object API, the WG will adhere to the following principles.</p>
+<p>In recognition of this interest, the working group will, once WebRTC 1.0: Real-time Communication Between Browsers reaches Candidate Recommendation, consider working on a new set of object-oriented APIs for real-time communication. As part of this consideration, the group will reevaluate its deliverables and milestones, and may reconsider its scope.</p>
+
+<p>In developing these new APIs, the WG will adhere to the following principles:</p>
 
 <ul>
-<li>Backwards-compatibility: applications which run in WebRTC 1.0 will continue to function with the Object API.</li>
-<li>Standalone operation: The new Object APIs will be sufficiently complete as to prevent the need for the programmer to switch between object-orientated and 1.0 SDP styles in order to complete common tasks.</li>
-<li>Feature independence: New features may be introduced in the object-oriented API that are not accessible in the documented 1.0 API or that are only added to the 1.0 SDP API in future versions.</li>
-<li>The WG will make efforts to align on API methodologies and nomenclature with the ORCT CG when contemplating design of similar APIs in the WG. This may include scheduled design meetings with relevant WG and CG stakeholders to foster further convergence of the APIs.</li>
+<li>Direct control: The new APIs are intended to provide direct control over the details of real-time communication, where the application can directly specify how information should be transmitted, without any built-in negotiation semantics.</li>
+<li>Standalone operation: The new APIs will be complete enough to allow applications to write solely to the new APIs to complete common tasks.</li>
+<li>Backwards-compatibility: The new APIs will extend the WebRTC 1.0 APIs, rather than replace them. Applications that use the PeerConnection API will continue to function, unless there is a clear and compelling reason to deprecate specific 1.0 functionality.</li>
+<li>Feature independence: Features may be introduced in the new APIs that are not available when using the PeerConnection API.</li>
 </ul>
+
+<p>The WG will take the work done by the ORTC CG as a source of input, and when contemplating similar APIs in the WG, make efforts to align with the ORTC CG on API methodologies and nomenclature. This may include scheduled design meetings with relevant WG and CG stakeholders to foster convergence of the APIs.</p>
 
 <p>The specified API Functions and the requirements on their implementation must offer functionality that ensures that users' expectations of privacy and control over their devices are met - this includes, but is not limited to, ensuring that users can control what local  devices an application can access for capturing media, and are able to at any time revoke that access.</p>
 
