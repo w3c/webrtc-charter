@@ -28,7 +28,7 @@
     <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/47318/join">Join the Web Real-Time Communications Working Group</a>.</p>
     </div>
 
-    <table class="summary-table"><tr id="Duration"><th rowspan="1" colspan="1">End date</th><td rowspan="1" colspan="1">March 2017</td></tr><tr><th rowspan="1" colspan="1">Confidentiality</th><td rowspan="1" colspan="1">Proceedings are <a href="/2005/10/Process-20051014/comm.html#confidentiality-levels">
+    <table class="summary-table"><tr id="Duration"><th rowspan="1" colspan="1">End date</th><td rowspan="1" colspan="1">March 2018</td></tr><tr><th rowspan="1" colspan="1">Confidentiality</th><td rowspan="1" colspan="1">Proceedings are <a href="/2005/10/Process-20051014/comm.html#confidentiality-levels">
         public
         </a></td></tr><tr><th rowspan="1" colspan="1">Initial Chairs</th><td rowspan="1" colspan="1"><ul>
         <li>Harald Alvestrand</li>
@@ -68,7 +68,7 @@
       <h2 id="deliverables">Deliverables</h2>
 
 	  <h3>Recommendation-Track Deliverables</h3>
-<p>The Working Group will deliver specifications that cover at least the following functions, unless they are found to be fully specified within other Working Groups' finished results:</p>
+<p>The working group will deliver specifications that cover at least the following functions, unless they are found to be fully specified within other working groups' finished results:</p>
 <dl>
 <dt>Media Stream Functions</dt>
 <dd>API functions to manipulate media streams for interactive real-time communications, connecting various processing functions to each other, and to media devices and network connections, including media manipulation functions for e.g. allowing to synchronize streams. Supplementary functions such as recording of media streams are also in scope.</dd>
@@ -82,7 +82,7 @@
 <dd>API functions to provide interfaces that enable the conveyance of parameters necessary to establish peer to peer connections, based on the protocols selected by the IETF RTCWeb Working Group. Included in this category are also API functions to allow identification of the peer.</dd>
 </dl>
 
-<p>The Working Group may decide to group the specified functions in one or more specifications. The Working Group has already started and will continue work on the following specifications:</p>
+<p>The working group may decide to group the specified functions in one or more specifications. The Working Group has already started and will continue work on the following specifications:</p>
 <dl>
 <dt><a href="http://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></dt>
 <dd>JavaScript APIs to allow media and data to be sent to and received from another browser or device implementing the appropriate set of real-time protocols</dd>
@@ -110,11 +110,20 @@
 
 <p>This work will be done in collaboration with the IETF. The W3C will define APIs to ensure that application developers can control the components or the architecture for selection and profiling of the wire protocols that will be produced by the IETF Real-Time Communication in WEB-browsers (RTCWeb) Working Group. While the specified API Functions will not constrain implementations into supporting a specific profile, they will be compatible with the Profile that will be specified by the RTCWeb Working Group.</p>
 
-<p>As the name implies, WebRTC 1.0: Real-time Communication Between Browsers is to be considered as a first version of APIs for real-time communication. The Working Group will, once WebRTC 1.0: Real-time Communication Between Browsers reaches Candidate Recommendation, consider proposals for the next version of APIs.</p>
+<p>As the name implies, WebRTC 1.0: Real-time Communication Between Browsers is to be considered as a first version of APIs for real-time communication. The working group will, once WebRTC 1.0: Real-time Communication Between Browsers reaches Candidate Recommendation, consider working on a new set of object-oriented APIs for real-time communication to produce an object-oriented specification to follow 1.0. The activities in the ORTC (Object Real-time Communications) Community Group indicate that there is interest in a new set of APIs. As part of this consideration, the group will reevaluate its deliverables and milestones, and may reconsider its scope.</p>
+
+<p>In developing an Object API, the WG will adhere to the following principles.</p>
+
+<ul>
+<li>Backwards-compatibility: applications which run in WebRTC 1.0 will continue to function with the Object API.</li>
+<li>Standalone operation: The new Object APIs will be sufficiently complete as to prevent the need for the programmer to switch between object-orientated and 1.0 SDP styles in order to complete common tasks.</li>
+<li>Feature independence: New features may be introduced in the object-oriented API that are not accessible in the documented 1.0 API or that are only added to the 1.0 SDP API in future versions.</li>
+<li>The WG will make efforts to align on API methodologies and nomenclature when contemplating design of similar APIs in the WG. This may include scheduled design meetings with relevant WG and CG stakeholders to foster further convergence of the APIs.</li>
+</ul>
 
 <p>The specified API Functions and the requirements on their implementation must offer functionality that ensures that users' expectations of privacy and control over their devices are met - this includes, but is not limited to, ensuring that users can control what local  devices an application can access for capturing media, and are able to at any time revoke that access.</p>
 
-<p>Similarly, all the deliverables must address issues of security. The security and privacy goals and requirements will be developed in coordination with the IETF RTCWeb Working Group.</p>
+<p>Similarly, all the deliverables must address issues of security - this includes, but is not limited to, ensuring that arbitrary UDP packets cannot be sent to arbitrary destinations and ports. The security and privacy goals and requirements will be developed in coordination with the IETF RTCWeb Working Group.</p>
 
 <p>Similarly, all deliverables must address issues of accessibility
 including relevant requirements listed in the <a href="http://w3c.github.io/pfwg/media-accessibility-reqs/">Media User Accessibility
@@ -126,15 +135,13 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
 	    <h3>Other Deliverables</h3>
 	    <p>A comprehensive test suite for all features of a specification is necessary to ensure the specification's robustness, consistency, and implementability, and to promote interoperability between User Agents. Therefore, each specification must have a companion test suite, which should be completed by the end of the Last Call phase, and must be completed, with an implementation report, before transition from Candidate Recommendation to Proposed Recommendation. Additional tests may be added to the test suite at any stage of the Recommendation track, and the maintenance of a implementation report is encouraged. </p>
 
-<p>In particular, since WebRTC deals with browser-to-browser communications, specific attention will be brought to the interoperability testing of the WebRTC API implementations.</p>
-
 <p>Other non-normative documents may be created such as:</p>
 <ul>
 <li>Primers</li>
 <li>Requirements and use case document for specifications.</li>
 <li>Non-normative group notes</li>
 </ul>
-<p>Given sufficient resources, this Working Group should review other Working Groups' deliverables that are identified as being relevant to the Working Group's mission. </p>
+<p>Given sufficient resources, this Working Group should review other working groups' deliverables that are identified as being relevant to the Working Group's mission. </p>
 	  </div>
 	  <h3>Milestones</h3>
 
@@ -293,6 +300,20 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
               <td class="REC">Q4 2016
               </td>
             </tr>
+            <tr>
+              <th>
+                WebRTC NG
+              </th>
+              <td class="WD1">
+                Q1 2016
+              </td>
+              <td class="CR">Q2 2017
+              </td>
+              <td class="PR">Q4 2017
+              </td>
+              <td class="REC">Q1 2018
+              </td>
+            </tr>
           </tbody>
         </table>
     </div>
@@ -313,7 +334,7 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
 	<dd>The API developed by the Audio Working Group builds upon the MediaStream object built by this group; further collaboration on the management of audio output device is expected</dd>
         <dt><a href="http://www.w3.org/2011/webappsec/">Web Application Security Working Group</a></dt>
         <dd>The Web Application Security Working Group is developing guidance on APIs that expose sensitive information, and an API to manage permissions, both of which matter to several of this group specifications</dd>
-        <dt><a href="http://www.w3.org/2012/webcrypto/">Web Cryptography Working Group</a></dt>
+        <dt><a href="http://www.w3.org/2012/webcrypto/">Web Cryptography API</a></dt>
         <dd>WebRTC connections are encrypted end-to-end; collaboration is expected with the Web Cryptography Working Group on exposing and manipulating some of the cryptography functions used</dd>
         <dt><a href="http://www.w3.org/2014/secondscreen/"> Second Screen Presentation Working Group</a></dt>
         <dd>The Second Screen Presentation Working Group is developing APIs to allow rendering of media on secondary devices; potential overlap with features enabled by the Audio Output Device APIs will need to be looked at</dd>
@@ -326,8 +347,6 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
         <dd>Several of the specifications developed by this group have potential impact on the privacy of users; reviews from the privacy interest group will be sought on these specifications</dd>
         <dt><a href="http://www.w3.org/Security/IG/">Web Security Interest Group</a></dt>
         <dd>Several of the specifications developed by this group have a complex impact on the security model of the Web; reviews from the Web Security Interest Group will be sought.</dd>
-        <dt><a href="https://www.w3.org/community/ortc/">ORTC Community Group</a></dt>
-        <dd>The ORTC Community Group is developing an alternative approach to WebRTC 1.0 that provides object-centric APIs for real-time communications. The existing WebRTC API has already integrated interfaces suggested by the Community Group, and will work with it to determine a path for further convergence.</dd>
 </dl>
 
 	<h3>External Groups</h3>
@@ -370,11 +389,6 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
       <h2 id="decisions">Decision Policy</h2>
 
       <p>As explained in the Process Document (<a href="/Consortium/Process/policies#Consensus">section 3.3</a>), this group will seek to make decisions when there is consensus. When the Chair puts a question and observes dissent, after due consideration of different opinions, the Chair should record a decision (possibly after a formal vote) and any objections, and move on.</p>
-
-      <p>Editors are responsible for reflecting the consensus from the Working Group in the specifications; where editors bring technical solutions in the specifications that have not been reviewed by the group, these solutions are annotated to reflect their status.</p>
-
-      <p>Contributors are encouraged to bring specific modifications (e.g. as patches) to the group's specifications to facilitate their review by the group and eventual integration by the editors.</p>
-
     </div>
 
     <div class="patent">
