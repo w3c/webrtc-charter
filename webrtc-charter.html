@@ -25,17 +25,20 @@
     <p>These APIs should enable building applications that can be run inside a browser, requiring no extra downloads or plugins, that allow communication between parties using audio, video and supplementary real-time communication, without having to use intervening servers (unless needed for firewall traversal, or for providing intermediary services). APIs enabling supplementary functions, such as recording, image capture and screen sharing are also in scope.</p>
 
     <div class="noprint">
-    <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/47318/join">Join the Web Real-Time Communications Working Group</a>.</p>
+    <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/47318/join">Join the Web Real-Time Communications Working Group</a>.</p>
     </div>
 
     <table class="summary-table"><tr id="Duration"><th rowspan="1" colspan="1">End date</th><td rowspan="1" colspan="1">March 2018</td></tr><tr><th rowspan="1" colspan="1">Confidentiality</th><td rowspan="1" colspan="1">Proceedings are <a href="/2005/10/Process-20051014/comm.html#confidentiality-levels">
         public
-        </a></td></tr><tr><th rowspan="1" colspan="1">Initial Chairs</th><td rowspan="1" colspan="1"><ul>
+        </a></td></tr><tr><th rowspan="1" colspan="1">Chairs</th><td rowspan="1" colspan="1"><ul>
         <li>Harald Alvestrand</li>
         <li>Stefan Håkansson</li>
+        <li>Erik Lagerway</li>
         </ul></td></tr><tr><th rowspan="1" colspan="1">Team Contacts<br/>
-
-        (FTE %: 10)</th><td rowspan="1" colspan="1">Dominique Hazaël-Massieux</td></tr><tr><th rowspan="1" colspan="1">Usual Meeting Schedule</th><td rowspan="1" colspan="1">Teleconferences: approximately 1 per month
+        (FTE %: 30)</th><td rowspan="1" colspan="1"><ul>
+        <li>Dominique Hazaël-Massieux</li>
+        <li>Vivien Lacourba</li>
+        </ul></td></tr><tr><th rowspan="1" colspan="1">Usual Meeting Schedule</th><td rowspan="1" colspan="1">Teleconferences: approximately 1 per month
            <br/>
         Face-to-face: up to 3-4 per year</td></tr></table>
 
@@ -47,9 +50,9 @@
 <li>API functions to explore device capabilities, e.g. camera, microphone, speakers,</li>
 <li>API functions to capture media from local devices (e.g. camera and microphone, but also output devices such as a screen),</li>
 <li>API functions for encoding and other processing of those media streams,</li>
-<li>API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal</li>
+<li>API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal,</li>
 <li>API functions for decoding and processing (including echo cancelling, stream synchronization and a number of other functions) of those streams at the incoming end,</li>
-<li>Delivery to the user of those media streams via local screens and audio output devices (partially covered with HTML5)</li>
+<li>Delivery to the user of those media streams via local screens and audio output devices (partially covered with HTML5).</li>
 </ul>
 
 	  <h3>Success Criteria</h3>
@@ -103,7 +106,7 @@
 <dd>An extension to DOM elements to allow to capture a media stream from their content</dd>
 <dt><a href="http://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></dt>
 <dd>JavaScript APIs that let a Web application manage how audio is rendered on the user audio output devices</dd>
-<dt><a href="http://w3c.github.io/mediacapture-screen-share/">Screen Capture API</a></dt>
+<dt><a href="http://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></dt>
 <dd>An extension to the Media Capture and Streams API to use a user's display, or parts thereof, as the source of a MediaStream.</dd>
 </dl>
 
@@ -144,7 +147,7 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
 <p>Other non-normative documents may be created such as:</p>
 <ul>
 <li>Primers</li>
-<li>Requirements and use case document for specifications.</li>
+<li>Requirements and use case document for specifications</li>
 <li>Non-normative group notes</li>
 </ul>
 <p>Given sufficient resources, this Working Group should review other Working Groups' deliverables that are identified as being relevant to the Working Group's mission. </p>
@@ -187,7 +190,7 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
               <td class="WD1">
                 <a href="http://www.w3.org/TR/2011/WD-webrtc-20111027/">2011-10-27</a>
               </td>
-              <td class="CR"> Q2 2015
+              <td class="CR">Q3 2015
               </td>
               <td class="PR">Q1 2016
               </td>
@@ -269,7 +272,7 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
                 Media Capture from DOM Elements
               </th>
               <td class="WD1">
-                Q1 2015
+                <a href="http://www.w3.org/TR/2015/WD-mediacapture-fromelement-20150219/">2015-02-19</a>
               </td>
               <td class="CR">Q4 2015
               </td>
@@ -280,10 +283,10 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
             </tr>
             <tr>
               <th>
-                Audio output API
+                Audio Output Devices API
               </th>
               <td class="WD1">
-                Q1 2015
+                <a href="http://www.w3.org/TR/2015/WD-audio-output-20150210/">2015-02-10</a>
               </td>
               <td class="CR">Q3 2015
               </td>
@@ -294,10 +297,10 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
             </tr>
             <tr>
               <th>
-                Screen Capture API
+                Screen Capture
               </th>
               <td class="WD1">
-                Q1 2015
+                <a href="http://www.w3.org/TR/2015/WD-screen-capture-20150210/">2015-02-10</a>
               </td>
               <td class="CR">Q4 2015
               </td>
@@ -331,26 +334,26 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
 
 	<dl>
 	<dt><a href="http://www.w3.org/html/wg/">HTML Working Group</a></dt>
-	<dd>The HTML Working Group defines a number of markup elements and APIs that serves as the basis on which the RTC APIs have been developed; in particular, several specifications of this group extends the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements</dd>
+	<dd>The HTML Working Group defines a number of markup elements and APIs that serves as the basis on which the RTC APIs have been developed; in particular, several specifications of this group extends the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements.</dd>
 	<dt><a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a></dt>
-	<dd>Some of the Web Applications Working Group APIs (such as the Web Sockets API) have served as inspiration or starting points for the APIs developed by the RTC Working Group. The work on Push Notifications provides an important feature for many WebRTC use cases. In addition, all the APIs developed by this group are based on WebIDL which the Web Applications Working Group is specifying.</dd>
+	<dd>Some of the Web Applications Working Group APIs (such as the Web Sockets API) have served as inspiration or starting points for the APIs developed by the WebRTC Working Group. The work on Push Notifications provides an important feature for many WebRTC use cases. In addition, all the APIs developed by this group are based on WebIDL which the Web Applications Working Group is specifying.</dd>
 	<dt><a href="http://www.w3.org/2009/dap/">Device APIs Working Group</a></dt>
 	<dd>The Device APIs Working Group jointly develops the media capture-related APIs with this group.</dd>
 	<dt><a href="http://www.w3.org/2011/audio/">Audio Working Group</a></dt>
-	<dd>The API developed by the Audio Working Group builds upon the MediaStream object built by this group; further collaboration on the management of audio output device is expected</dd>
+	<dd>The API developed by the Audio Working Group builds upon the MediaStream object built by this group; further collaboration on the management of audio output device is expected.</dd>
         <dt><a href="http://www.w3.org/2011/webappsec/">Web Application Security Working Group</a></dt>
-        <dd>The Web Application Security Working Group is developing guidance on APIs that expose sensitive information, and an API to manage permissions, both of which matter to several of this group specifications</dd>
+        <dd>The Web Application Security Working Group is developing guidance on APIs that expose sensitive information, and an API to manage permissions, both of which matter to several of this group specifications.</dd>
         <dt><a href="http://www.w3.org/2012/webcrypto/">Web Cryptography Working Group</a></dt>
-        <dd>WebRTC connections are encrypted end-to-end; collaboration is expected with the Web Cryptography Working Group on exposing and manipulating some of the cryptography functions used</dd>
-        <dt><a href="http://www.w3.org/2014/secondscreen/"> Second Screen Presentation Working Group</a></dt>
-        <dd>The Second Screen Presentation Working Group is developing APIs to allow rendering of media on secondary devices; potential overlap with features enabled by the Audio Output Device APIs will need to be looked at</dd>
+        <dd>WebRTC connections are encrypted end-to-end; collaboration is expected with the Web Cryptography Working Group on exposing and manipulating some of the cryptography functions used.</dd>
+        <dt><a href="http://www.w3.org/2014/secondscreen/">Second Screen Presentation Working Group</a></dt>
+        <dd>The Second Screen Presentation Working Group is developing APIs to allow rendering of media on secondary devices; potential overlap with features enabled by the Audio Output Devices API will need to be looked at.</dd>
 	<dt>
 	    <a href="http://www.w3.org/WAI/PF/">WAI Protocols and Formats Working Group</a></dt>
 	<dd>Reviews from the WAI PF Working Group will be required to ensure the APIs allow to create an accessible user experience.</dd>
         <dt><a href="http://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
-        <dd>Work on gathering use cases and requirements for Home Networking scenarios within the Web and TV Interest Group may uncover aspects that affect the design of real-time communications functions. The RTC Working Group will coordinate with the Web and TV Interest Group on these use cases and requirements as appropriate.</dd>
+        <dd>Work on gathering use cases and requirements for Home Networking scenarios within the Web and TV Interest Group may uncover aspects that affect the design of real-time communications functions. The WebRTC Working Group will coordinate with the Web and TV Interest Group on these use cases and requirements as appropriate.</dd>
         <dt><a href="http://www.w3.org/Privacy/">Privacy Interest Group</a></dt>
-        <dd>Several of the specifications developed by this group have potential impact on the privacy of users; reviews from the privacy interest group will be sought on these specifications</dd>
+        <dd>Several of the specifications developed by this group have potential impact on the privacy of users; reviews from the privacy interest group will be sought on these specifications.</dd>
         <dt><a href="http://www.w3.org/Security/IG/">Web Security Interest Group</a></dt>
         <dd>Several of the specifications developed by this group have a complex impact on the security model of the Web; reviews from the Web Security Interest Group will be sought.</dd>
 </dl>
@@ -373,7 +376,7 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
       allocate also the necessary resources for building Test
       Suites for each specification.</p>
 
-      <p>Participants are reminded of the <a href="/2005/10/Process-20051014/groups.html#good-standing">
+      <p>Participants are reminded of the <a href="/Consortium/Process/#good-standing">
 
       Good Standing requirements</a> of the W3C Process.</p>
     </div>
@@ -381,7 +384,7 @@ will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">A
     <div class="communication">
       <h2 id="communication">Communication</h2>
 
-      <p>This group primarily conducts its work on the public mailing list <a href="mailto:public-webrtc@w3.org">public-webrtc@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-webrtc/" title="Public archives of the Web RTC mailing-list">archives</a>).</p>
+      <p>This group primarily conducts its work on the public mailing list <a href="mailto:public-webrtc@w3.org">public-webrtc@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-webrtc/" title="Public archives of the WebRTC mailing-list">archives</a>).</p>
 
       <p>The group uses a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and participants of the group, for Member-only discussions in special cases when a particular participant requests such a discussion.</p>
 
