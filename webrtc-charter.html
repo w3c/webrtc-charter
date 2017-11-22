@@ -1,115 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset=utf-8>
-  <title>[DRAFT] Web Real-Time Communications Working Group Charter</title>
-  <link rel="stylesheet" href="//www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen"/>
-  <link rel="stylesheet" type="text/css" href="//www.w3.org/Guide/pubrules-style.css"/>
-  <link rel="stylesheet" type="text/css" href="//www.w3.org/2006/02/charter-style.css"/>
-</head>
-<body>
-<ul id="navbar" style="font-size: small"><li><a href="#scope">Scope</a></li><li><a href="#deliverables">Deliverables</a></li><li><a href="#coordination">Dependencies and Liaisons</a></li><li><a href="#participation">Participation</a></li><li><a href="#communication">Communication</a></li><li><a href="#decisions">Decision Policy</a></li><li><a href="#patentpolicy">Patent  </a></li><li><a href="#about">About this Charter</a></li></ul>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>[DRAFT] Web Real-Time Communications Working Group Charter</title>
+
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/Guide/pubrules-style.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css" />
+    <style type="text/css">
+      ul#navbar {
+        font-size: small;
+      }
 
 
-    <p><a href="http://www.w3.org/"><img alt="W3C" height="48" src="//www.w3.org/Icons/w3c_home" width="72"/></a>  <a class="domainlogo" href="/UbiWeb/"><img src="//www.w3.org/Icons/ubi212" alt="Ubiquitous Web Domain"/></a>    </p>
+      dt.spec {
+        font-weight: bold;
+      }
 
-    <h1 id="title">[DRAFT] Web Real-Time Communications Working Group Charter</h1>
+      dt.spec new {
+        background: yellow;
+      }
 
-    <p><em>This is a revision of the draft W3C WebRTC Working Group charter
-    sent for review by the W3C Advisory Committee. It incorporates changes based on feedback received during the AC review. See also the <a href="http://www.w3.org/2011/04/webrtc-charter.html">current WebRTC Working Group charter</a>.</em></p>
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
 
-    <p class="mission">The
-    <strong>mission</strong> of the Web Real-Time Communications Working Group, part of
-    the <a href="http://www.w3.org/2007/uwa/Activity.html">Ubiquitous Web Applications Activity</a>, is to define client-side APIs to enable Real-Time Communications in Web browsers.</p>
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
 
-    <p>These APIs should enable building applications that can be run inside a browser, requiring no extra downloads or plugins, that allow communication between parties using audio, video and supplementary real-time communication, without having to use intervening servers (unless needed for firewall traversal, or for providing intermediary services). APIs enabling supplementary functions, such as recording, image capture and screen sharing are also in scope.</p>
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
 
-    <div class="noprint">
-    <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/47318/join">Join the Web Real-Time Communications Working Group</a>.</p>
-    </div>
+      .todo {
+        color: #900;
+      }
 
-    <table class="summary-table"><tr id="Duration"><th rowspan="1" colspan="1">End date</th><td rowspan="1" colspan="1">March 2018</td></tr><tr><th rowspan="1" colspan="1">Confidentiality</th><td rowspan="1" colspan="1">Proceedings are <a href="/2005/10/Process-20051014/comm.html#confidentiality-levels">
-        public
-        </a></td></tr><tr><th rowspan="1" colspan="1">Chairs</th><td rowspan="1" colspan="1"><ul>
-        <li>Harald Alvestrand</li>
-        <li>Stefan Håkansson</li>
-        <li>Erik Lagerway</li>
-        </ul></td></tr><tr><th rowspan="1" colspan="1">Team Contacts<br/>
-        (FTE %: 30)</th><td rowspan="1" colspan="1"><ul>
-        <li>Dominique Hazaël-Massieux</li>
-        <li>Vivien Lacourba</li>
-        </ul></td></tr><tr><th rowspan="1" colspan="1">Usual Meeting Schedule</th><td rowspan="1" colspan="1">Teleconferences: approximately 1 per month
-           <br/>
-        Face-to-face: up to 3-4 per year</td></tr></table>
+      footer {
+        font-size: small;
+      }
 
-    <div class="scope">
-      <h2 id="scope">Scope</h2>
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72" /></a>
+      </p>
+    </header>
 
+
+    <main>
+      <h1 id="title">[DRAFT] Web Real-Time Communications Working Group Charter</h1>
+
+      <p><em>This is draft revised charter for the W3C WebRTC Working Group for discussion in the Working Group. It has no formal standing.</em></p>
+
+      <p class="mission">The
+    <strong>mission</strong> of the Web Real-Time Communications Working Group is to define client-side APIs to enable Real-Time Communications in Web browsers.</p>
+
+      <p>These APIs should enable building applications that can be run inside a browser, requiring no extra downloads or plugins, that allow communication between parties using audio, video and supplementary real-time communication, without having to use intervening servers (unless needed for firewall traversal, or for providing intermediary services). APIs enabling supplementary functions, such as recording, image capture and screen sharing are also in scope.</p>
+
+      <div class="noprint">
+        <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/47318/join">Join the Web Real-Time Communications Working Group</a>.</p>
+      </div>
+
+         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <a href="https://github.com/w3c/webrtc-charter">GitHub</a>.
+    Feel free to raise <a href="https://github.com/w3c/webrtc-charter/issues">issues</a>.
+          </p>
+
+      <section id="details">
+        <table class="summary-table">
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+            </td>
+          </tr>
+          <tr id="Duration">
+            <th>
+              End date
+            </th>
+            <td>
+              <i class="todo">31 March 2020?</i>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Charter extension</th>
+            <td>See <a href="#history">Change History</a>.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              <ul>
+                <li>Bernard Aboba</li>
+                <li>Harald Alvestrand</li>
+                <li>Stefan Håkansson</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <ul>
+                <li>Dominique Hazaël-Massieux</li>
+                <li>Vivien Lacourba</li>
+              </ul>
+              (0.3 <abbr title="Full-Time Equivalent">FTE</abbr>)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> approximately 1 per month
+              <br />
+              <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+            </td>
+          </tr>
+        </table>
+
+      </section>
+
+
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
 	<p>Enabling real-time communications between Web browsers require the following client-side technologies to be available:</p>
-<ul>
-<li>API functions to explore device capabilities, e.g. camera, microphone, speakers,</li>
-<li>API functions to capture media from local devices (e.g. camera and microphone, but also output devices such as a screen),</li>
-<li>API functions for encoding and other processing of those media streams,</li>
-<li>API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal,</li>
-<li>API functions for decoding and processing (including echo cancelling, stream synchronization and a number of other functions) of those streams at the incoming end,</li>
-<li>Delivery to the user of those media streams via local screens and audio output devices (partially covered with HTML5).</li>
-</ul>
+        <ul>
+          <li>API functions to explore device capabilities, e.g. camera, microphone, speakers,</li>
+          <li>API functions to capture media from local devices (e.g. camera and microphone, but also output devices such as a screen),</li>
+          <li>API functions for encoding and other processing of those media streams,</li>
+          <li>API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal,</li>
+          <li>API functions for decoding and processing (including echo cancelling, stream synchronization and a number of other functions) of those streams at the incoming end,</li>
+          <li>Delivery to the user of those media streams via local screens and audio output devices (partially covered with HTML5).</li>
+        </ul>
 
-	  <h3>Success Criteria</h3>
+        <div id="section-out-of-scope">
+          <h3 id="out-of-scope">Out of Scope</h3>
+          <p>The definition of the network protocols used to establish the connections between peers is out of scope for this group; in general, it is expected that protocols considerations will be handled in the IETF.</p>
+	  <p>The definition of any new codecs for audio and video is out of scope.</p>
+        </div>
 
+        <div>
+          <h3>Success Criteria</h3>
 	  <p>To advance to Proposed Recommendation, each specification is expected to have two independent implementations of each feature defined in the specification.</p>
 	  <p>To advance to Proposed Recommendation, interoperability between the independent implementations (that is, bidirectional audio and video communication between the implementations) should be demonstrated.</p>
+          <p><i class="todo">For specifications of technologies that directly impact user experience, such as content technologies, as well as protocols and APIs which impact content: </i>
+            Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
+            recommendations for maximising accessibility in implementations.</p>
+        </div>
+      </section>
 
-      <div>
-	<h3>Out of Scope</h3>
-	<p>The definition of the network protocols used to establish the connections between peers is out of scope for this group; in general, it is expected that protocols considerations will be handled in the IETF.</p>
-	<p>The definition of any new codecs for audio and video is out of scope.</p>
-      </div>
-    </div>
 
-    <div>
-      <h2 id="deliverables">Deliverables</h2>
 
-	  <h3>Recommendation-Track Deliverables</h3>
-<p>The Working Group will deliver specifications that cover at least the following functions, unless they are found to be fully specified within other Working Groups' finished results:</p>
-<dl>
-<dt>Media Stream Functions</dt>
-<dd>API functions to manipulate media streams for interactive real-time communications, connecting various processing functions to each other, and to media devices and network connections, including media manipulation functions for e.g. allowing to synchronize streams. Supplementary functions such as recording of media streams are also in scope.</dd>
-<dt>Audio Stream Functions</dt>
-<dd>An extension of the Media Stream Functions to process audio streams, to enable features such as automatic gain control, mute functions and echo cancellation.</dd>
-<dt>Video Stream Functions</dt>
-<dd>An extension of the Media Stream Functions to process video streams, to enable features such as bandwidth limiting, image manipulation or "video mute".</dd>
-<dt>Functional Component Functions</dt>
-<dd>API functions that allow to query for the components present in an implementation, instantiate them, and connect them to media streams.</dd>
-<dt>P2P Connection Functions</dt>
-<dd>API functions to provide interfaces that enable the conveyance of parameters necessary to establish peer to peer connections, based on the protocols selected by the IETF RTCWeb Working Group. Included in this category are also API functions to allow identification of the peer.</dd>
-</dl>
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
 
-<p>The Working Group may decide to group the specified functions in one or more specifications. The Working Group has already started and will continue work on the following specifications:</p>
-<dl>
-<dt><a href="http://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></dt>
-<dd>JavaScript APIs to allow media and data to be sent to and received from another browser or device implementing the appropriate set of real-time protocols</dd>
-<dt><a href="http://w3c.github.io/webrtc-stats/webrtc-stats.html">Identifiers for WebRTC's Statistics API</a></dt>
-<dd>JavaScript APIs that allow access to statistical information about a peer-to-peer connection established via the WebRTC API</dd>
-</dl>
-<p>as well as on the following specifications jointly developed with the <a href="http://www.w3.org/2009/dap/">Device APIs Working Group</a>:</p>
-<dl>
-<dt><a href="http://w3c.github.io/mediacapture-main/getusermedia.html">Media Capture and Streams</a></dt>
-<dd>JavaScript APIs that allow local media, including audio and video, to be requested from a platform</dd>
-<dt><a href="http://w3c.github.io/mediacapture-record/MediaRecorder.html">MediaStream Recording</a></dt>
-<dd>a JavaScript API to record MediaStreams</dd>
-<dt><a href="http://w3c.github.io/mediacapture-image/">MediaStream Image Capture</A></dt>
-<dd>a JavaScript API to capture still images from a video MediaStream</dd>
-<dt><a href="http://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></dt>
-<dd>An extension to the Media Capture and Streams API to capture depth streams (e.g. from 3D cameras)</dd>
-<dt><a href="http://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></dt>
-<dd>An extension to DOM elements to allow to capture a media stream from their content</dd>
-<dt><a href="http://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></dt>
-<dd>JavaScript APIs that let a Web application manage how audio is rendered on the user audio output devices</dd>
-<dt><a href="http://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></dt>
-<dd>An extension to the Media Capture and Streams API to use a user's display, or parts thereof, as the source of a MediaStream.</dd>
-</dl>
+        <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/2011/04/webrtc/">group home page</a>.</p>
 
+        <p><span class='todo'><span class="issue">Do we want to adopt "test as you commit" in our charter?</span> The Working Group will follow a <a href="https://github.com/w3c/testing-how-to/#test-as-you-commit">test as you commit approach</a> to specification development, for specifications with one or more implementations.</span></p>
+
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+
+        <div id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+
+          <p>The Working Group will deliver specifications that cover at least the following functions, unless they are found to be fully specified within other Working Groups' finished results:</p>
+          <dl>
+            <dt>Media Stream Functions</dt>
+            <dd>API functions to manipulate media streams for interactive real-time communications, connecting various processing functions to each other, and to media devices and network connections, including media manipulation functions for e.g. allowing to synchronize streams. Supplementary functions such as recording of media streams are also in scope.</dd>
+            <dt>Audio Stream Functions</dt>
+            <dd>An extension of the Media Stream Functions to process audio streams, to enable features such as automatic gain control, mute functions and echo cancellation.</dd>
+            <dt>Video Stream Functions</dt>
+            <dd>An extension of the Media Stream Functions to process video streams, to enable features such as bandwidth limiting, image manipulation or "video mute".</dd>
+            <dt>Functional Component Functions</dt>
+            <dd>API functions that allow to query for the components present in an implementation, instantiate them, and connect them to media streams.</dd>
+            <dt>P2P Connection Functions</dt>
+            <dd>API functions to provide interfaces that enable the conveyance of parameters necessary to establish peer to peer connections, based on the protocols selected by the IETF RTCWeb Working Group. Included in this category are also API functions to allow identification of the peer.</dd>
+          </dl>
+
+          <p>The Working Group may decide to group the specified functions in one or more specifications, and to develop extensions to its existing specifications to bring additional functionality identified as needed.</p>
+
+          <p>The Working Group has already started and will continue work on the following specifications: </p>
+
+          <dl>
+            <dt><a href="http://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></dt>
+            <dd>JavaScript APIs to allow media and data to be sent to and received from another browser or device implementing the appropriate set of real-time protocols</dd>
+            <dt><a href="http://w3c.github.io/webrtc-stats/webrtc-stats.html">Identifiers for WebRTC's Statistics API</a></dt>
+            <dd>JavaScript APIs that allow access to statistical information about a peer-to-peer connection established via the WebRTC API</dd>
+            <dt><a href="http://w3c.github.io/mediacapture-main/getusermedia.html">Media Capture and Streams</a></dt>
+            <dd>JavaScript APIs that allow local media, including audio and video, to be requested from a platform</dd>
+            <dt><a href="http://w3c.github.io/mediacapture-record/MediaRecorder.html">MediaStream Recording</a></dt>
+            <dd>a JavaScript API to record MediaStreams</dd>
+            <dt><a href="http://w3c.github.io/mediacapture-image/">MediaStream Image Capture</A></dt>
+            <dd>a JavaScript API to capture still images from a video MediaStream</dd>
+            <dt><a href="http://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></dt>
+            <dd>An extension to the Media Capture and Streams API to capture depth streams (e.g. from 3D cameras)</dd>
+            <dt><a href="http://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></dt>
+            <dd>An extension to DOM elements to allow to capture a media stream from their content</dd>
+            <dt><a href="http://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></dt>
+            <dd>JavaScript APIs that let a Web application manage how audio is rendered on the user audio output devices</dd>
+            <dt><a href="http://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></dt>
+            <dd>An extension to the Media Capture and Streams API to use a user's display, or parts thereof, as the source of a MediaStream.</dd>
+          </dl>
 
 <p>This work will be done in collaboration with the IETF. The W3C will define APIs to ensure that application developers can control the components or the architecture for selection and profiling of the wire protocols that will be produced by the IETF Real-Time Communication in WEB-browsers (RTCWeb) Working Group. While the specified API Functions will not constrain implementations into supporting a specific profile, they will be compatible with the Profile that will be specified by the RTCWeb Working Group.</p>
 
@@ -138,306 +262,267 @@ Requirements document (MAUR)</a>, such as multiple well-synchronized
 instances of the same media type. The accessibility goals and requirements
 will be developed in coordination with the <a href="http://www.w3.org/WAI/PF/">Accessible Platform Architectures Working Group</a>.</p>
 
-	  <div id="ig-other-deliverables">
-	    <h3>Other Deliverables</h3>
-	    <p>A comprehensive test suite for all features of a specification is necessary to ensure the specification's robustness, consistency, and implementability, and to promote interoperability between User Agents. Therefore, each specification must have a companion test suite, which should be completed by the end of the Last Call phase, and must be completed, with an implementation report, before transition from Candidate Recommendation to Proposed Recommendation. Additional tests may be added to the test suite at any stage of the Recommendation track, and the maintenance of a implementation report is encouraged. </p>
 
-<p>In particular, since WebRTC deals with communications, specific attention will be brought to the interoperability testing of the WebRTC API implementations (both browser-to-browser and browser-to-native).</p>
+        </div>
 
-<p>Other non-normative documents may be created such as:</p>
-<ul>
-<li>Primers</li>
-<li>Requirements and use case document for specifications</li>
-<li>Non-normative group notes</li>
-</ul>
-<p>Given sufficient resources, this Working Group should review other Working Groups' deliverables that are identified as being relevant to the Working Group's mission. </p>
-	  </div>
-	  <h3>Milestones</h3>
+        <div id="ig-other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+	  <p>A comprehensive test suite for all features of a specification is necessary to ensure the specification's robustness, consistency, and implementability, and to promote interoperability between User Agents. Therefore, each specification must have a companion test suite, which should be completed by the end of the Last Call phase, and must be completed, with an implementation report, before transition from Candidate Recommendation to Proposed Recommendation. Additional tests may be added to the test suite at any stage of the Recommendation track, and the maintenance of a implementation report is encouraged. </p>
 
-          <table class="roadmap">
-          <caption>
-            Milestones
-          </caption>
-          <tfoot>
-            <tr>
-              <td colspan="5">
-                Note: The group will document significant changes from this initial schedule on the <a href="http://www.w3.org/2011/04/webrtc/">group home page</a>.
-              </td>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr>
-              <th>
-                Specification
-              </th>
-              <th>
-                <abbr title="First Working Draft">FPWD</abbr>
-              </th>
-              <th>
-                <abbr title="Candidate Recommendation">CR</abbr>
-              </th>
-              <th>
-                <abbr title="Proposed Recommendation">PR</abbr>
-              </th>
-              <th>
-                <abbr title="Recommendation">Rec</abbr>
-              </th>
-            </tr>
-            <tr>
-              <th>
-                Media Capture and Streams
-              </th>
-              <td class="WD1">
-                <a href="http://www.w3.org/TR/2011/WD-webrtc-20111027/">2011-10-27</a>
-              </td>
-              <td class="CR">Q3 2015
-              </td>
-              <td class="PR">Q1 2016
-              </td>
-              <td class="REC">Q2 2016
-              </td>
-            </tr>
-            <tr>
-              <th>
-                WebRTC 1.0: Real-time Communication Between Browsers
-              </th>
-              <td class="WD1">
-                <a href="http://www.w3.org/TR/2011/WD-webrtc-20111027/">2011-10-27</a>
-              </td>
-              <td class="CR"> Q4 2015
-              </td>
-              <td class="PR">Q4 2016
-              </td>
-              <td class="REC">Q1 2017
-              </td>
-            </tr>
-            <tr>
-              <th>
-                MediaStream Recording
-              </th>
-              <td class="WD1">
-                <a href="http://www.w3.org/TR/2013/WD-mediastream-recording-20130205/">2013-02-25</a>
-              </td>
-              <td class="CR">Q4 2015
-              </td>
-              <td class="PR">Q3 2016
-              </td>
-              <td class="REC">Q1 2017
-              </td>
-            </tr>
-            <tr>
-              <th>
-                MediaStream Image Capture
-              </th>
-              <td class="WD1">
-                <a href="http://www.w3.org/TR/2013/WD-image-capture-20130709/">2013-07-09</a>
-              </td>
-              <td class="CR">Q2 2016
-              </td>
-              <td class="PR">Q2 2017
-              </td>
-              <td class="REC">Q3 2017
-              </td>
-            </tr>
-            <tr>
-              <th>
-                Media Capture Depth Stream Extensions
-              </th>
-              <td class="WD1">
-                <a href="http://www.w3.org/TR/2014/WD-mediacapture-depth-20141007/">2014-10-07</a>
-              </td>
-              <td class="CR">Q2 2016
-              </td>
-              <td class="PR">Q2 2017
-              </td>
-              <td class="REC">Q3 2017
-              </td>
-            </tr>
-            <tr>
-              <th>
-                Identifiers for WebRTC's Statistics API
-              </th>
-              <td class="WD1">
-                <a href="http://www.w3.org/TR/2014/WD-webrtc-stats-20141021/">2014-10-21</a>
-              </td>
-              <td class="CR">Q4 2015
-              </td>
-              <td class="PR">Q4 2016
-              </td>
-              <td class="REC">Q1 2017
-              </td>
-            </tr>
-            <tr>
-              <th>
-                Media Capture from DOM Elements
-              </th>
-              <td class="WD1">
-                <a href="http://www.w3.org/TR/2015/WD-mediacapture-fromelement-20150219/">2015-02-19</a>
-              </td>
-              <td class="CR">Q4 2015
-              </td>
-              <td class="PR">Q3 2016
-              </td>
-              <td class="REC">Q4 2016
-              </td>
-            </tr>
-            <tr>
-              <th>
-                Audio Output Devices API
-              </th>
-              <td class="WD1">
-                <a href="http://www.w3.org/TR/2015/WD-audio-output-20150210/">2015-02-10</a>
-              </td>
-              <td class="CR">Q3 2015
-              </td>
-              <td class="PR">Q2 2016
-              </td>
-              <td class="REC">Q3 2016
-              </td>
-            </tr>
-            <tr>
-              <th>
-                Screen Capture
-              </th>
-              <td class="WD1">
-                <a href="http://www.w3.org/TR/2015/WD-screen-capture-20150210/">2015-02-10</a>
-              </td>
-              <td class="CR">Q4 2015
-              </td>
-              <td class="PR">Q3 2016
-              </td>
-              <td class="REC">Q4 2016
-              </td>
-            </tr>
-            <tr>
-              <th>
-                WebRTC next version
-              </th>
-              <td class="WD1">
-                Q1 2016
-              </td>
-              <td class="CR">Q2 2017
-              </td>
-              <td class="PR">Q4 2017
-              </td>
-              <td class="REC">Q1 2018
-              </td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
+          <p>In particular, since WebRTC deals with communications, specific attention will be brought to the interoperability testing of the WebRTC API implementations (both browser-to-browser and browser-to-native).</p>
 
-    <div class="dependencies">
-      <h2 id="coordination">Dependencies and Liaisons</h2>
+          <p>Other non-normative documents may be created such as:</p>
+          <ul>
+            <li>Primers</li>
+            <li>Requirements and use case document for specifications</li>
+            <li>Non-normative group notes</li>
+          </ul>
+          <p>Given sufficient resources, this Working Group should review other Working Groups' deliverables that are identified as being relevant to the Working Group's mission. </p>
+        </div>
 
-	<h3>W3C Groups</h3>
+        <div id="timeline">
+          <h3>Timeline</h3>
+            <p class="todo">Put here a timeline view of most relevant deliverables.</p>
+            <ul class="todo">
+              <li>Month YYYY: CR for Foo API</li>
+            </ul>
+        </div>
+      </section>
 
+
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/2017/Process-20170301/#RecsWD" title="First Public Working Draft">FPWD</a> and at least 3 months before <a href="https://www.w3.org/2017/Process-20170301/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/2017/Process-20170301/#WGCharter">W3C Process Document</a>:</p>
+
+
+        <div>
+          <h3 id="w3c-coordination">W3C Groups</h3>
 	<dl>
-	<dt><a href="http://www.w3.org/html/wg/">HTML Working Group</a></dt>
-	<dd>The HTML Working Group defines a number of markup elements and APIs that serves as the basis on which the RTC APIs have been developed; in particular, several specifications of this group extends the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements.</dd>
-	<dt><a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a></dt>
-	<dd>Some of the Web Applications Working Group APIs (such as the Web Sockets API) have served as inspiration or starting points for the APIs developed by the WebRTC Working Group. The work on Push Notifications provides an important feature for many WebRTC use cases. In addition, all the APIs developed by this group are based on WebIDL which the Web Applications Working Group is specifying.</dd>
-	<dt><a href="http://www.w3.org/2009/dap/">Device APIs Working Group</a></dt>
-	<dd>The Device APIs Working Group jointly develops the media capture-related APIs with this group.</dd>
+	<dt><a href="http://www.w3.org/html/wg/">Web Platform Working Group</a></dt>
+	<dd>The Web Platform Working Group defines a number of markup elements and APIs that serves as the basis on which the RTC APIs have been developed; in particular, several specifications of this group extends the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements. Some of its APIs (such as the Web Sockets API) have served as inspiration or starting points for the APIs developed by the WebRTC Working Group. The work on Push Notifications provides an important feature for many WebRTC use cases. In addition, all the APIs developed by this group are based on WebIDL which the Web Platform Working Group is specifying.</dd>
+	<dt><a href="http://www.w3.org/2009/dap/">Devices and Sensors Working Group</a></dt>
+	<dd>The Devices and Sensors Working Group develops APIs to access sensors which have similarities with APIs needed to access media devices. The group was also initially involved in the design of the media capture APIs.</dd>
 	<dt><a href="http://www.w3.org/2011/audio/">Audio Working Group</a></dt>
-	<dd>The API developed by the Audio Working Group builds upon the MediaStream object built by this group; further collaboration on the management of audio output device is expected.</dd>
+	<dd>The API developed by the Audio Working Group builds upon the <code>MediaStream</code> object built by this group; further collaboration on the management of audio output device is expected.</dd>
         <dt><a href="http://www.w3.org/2011/webappsec/">Web Application Security Working Group</a></dt>
         <dd>The Web Application Security Working Group is developing guidance on APIs that expose sensitive information, and an API to manage permissions, both of which matter to several of this group specifications.</dd>
-        <dt><a href="http://www.w3.org/2012/webcrypto/">Web Cryptography Working Group</a></dt>
-        <dd>WebRTC connections are encrypted end-to-end; collaboration is expected with the Web Cryptography Working Group on exposing and manipulating some of the cryptography functions used.</dd>
         <dt><a href="http://www.w3.org/2014/secondscreen/">Second Screen Presentation Working Group</a></dt>
         <dd>The Second Screen Presentation Working Group is developing APIs to allow rendering of media on secondary devices; potential overlap with features enabled by the Audio Output Devices API will need to be looked at.</dd>
-	<dt>
-	    <a href="http://www.w3.org/WAI/PF/">WAI Protocols and Formats Working Group</a></dt>
-	<dd>Reviews from the WAI PF Working Group will be required to ensure the APIs allow to create an accessible user experience.</dd>
-        <dt><a href="http://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
-        <dd>Work on gathering use cases and requirements for Home Networking scenarios within the Web and TV Interest Group may uncover aspects that affect the design of real-time communications functions. The WebRTC Working Group will coordinate with the Web and TV Interest Group on these use cases and requirements as appropriate.</dd>
-        <dt><a href="http://www.w3.org/Privacy/">Privacy Interest Group</a></dt>
-        <dd>Several of the specifications developed by this group have potential impact on the privacy of users; reviews from the privacy interest group will be sought on these specifications.</dd>
-        <dt><a href="http://www.w3.org/Security/IG/">Web Security Interest Group</a></dt>
-        <dd>Several of the specifications developed by this group have a complex impact on the security model of the Web; reviews from the Web Security Interest Group will be sought.</dd>
-</dl>
+        <dt><a href="http://www.w3.org/2011/webtv/">Media and Entertainment Interest Group</a></dt>
+        <dd>Work on gathering use cases and requirements for Home Networking scenarios within the Media and Entertainment Interest Group may uncover aspects that affect the design of real-time communications functions. The WebRTC Working Group will coordinate with the Interest Group on these use cases and requirements as appropriate.</dd>
+        </dl>
 
-	<h3>External Groups</h3>
+          <h3 id="external-coordination">External Organizations</h3>
+          <dl>
+	    <dt><a href="http://datatracker.ietf.org/wg/rtcweb/">IETF Real-Time Communication in WEB-browsers group</a> (RTCWeb)</dt>
+	    <dd>The RTC APIs developed by this group will build upon the protocols and formats developed in the IETF RTCWeb Working Group, which will in general handle dependencies to other IETF Working Groups.</dd>
+          </dl>
 
-	<dl>
-	<dt><a href="http://datatracker.ietf.org/wg/rtcweb/">IETF Real-Time Communication in WEB-browsers group</a> (RTCWeb)</dt>
-	<dd>The RTC APIs developed by this group will build upon the protocols and formats developed in the IETF RTCWeb Working Group, which will in general handle dependencies to other IETF Working Groups.</dd>
-	</dl>
-      </div>
 
-    <div class="participation">
-      <h2 id="participation">Participation</h2>
+        </div>
+      </section>
 
-      <p>To be successful, the Web Real-Time Communications Working Group is expected to have 10 or more active participants for its
-      duration. Effective participation to Web Real-Time Communications Working Group is expected to consume one work day per week for each
-      participant; two days per week for
-      editors. The Web Real-Time Communications Working Group will
-      allocate also the necessary resources for building Test
-      Suites for each specification.</p>
 
-      <p>Participants are reminded of the <a href="/Consortium/Process/#good-standing">
 
-      Good Standing requirements</a> of the W3C Process.</p>
-    </div>
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the WorkingInterest Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+        </p>
+      </section>
 
-    <div class="communication">
-      <h2 id="communication">Communication</h2>
 
-      <p>This group primarily conducts its work on the public mailing list <a href="mailto:public-webrtc@w3.org">public-webrtc@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-webrtc/" title="Public archives of the WebRTC mailing-list">archives</a>).</p>
 
-      <p>The group uses a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and participants of the group, for Member-only discussions in special cases when a particular participant requests such a discussion.</p>
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/2017/Process-20170301/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository, and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/2011/04/webrtc/">WebRTC Working Group home page.</a>
+        </p>
+        <p>
+          Most WebRTC Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work in its repositories' GitHub issues and on its public mailing list <a href="mailto:public-webrtc@w3.org">public-webrtc@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-webrtc/" title="Public archives of the WebRTC mailing-list">archives</a>).
+          The public is invited to review, discuss and contribute to this work.
+        </p>
+        <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p>
+      </section>
 
-      <p>Information about the group (deliverables, participants,
-      face-to-face
-      meetings, teleconferences, etc.) is
-      available from the <a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group home page</a>.</p>
-    </div>
 
-    <div class="decisions">
-      <h2 id="decisions">Decision Policy</h2>
 
-      <p>As explained in the Process Document (<a href="/Consortium/Process/policies#Consensus">section 3.3</a>), this group will seek to make decisions when there is consensus. When the Chair puts a question and observes dissent, after due consideration of different opinions, the Chair should record a decision (possibly after a formal vote) and any objections, and move on.</p>
-      <p>After mailing list and other informal discussion, substantive change proposals should be submitted as GitHub pull requests.  These can come from the editors or from WG members.</p>
-      <p>Chairs are responsible for determining whether or not there is WG consensus for the changes contained in a pull request.
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/2017/Process-20170301/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>After mailing list and other informal discussion, substantive change proposals should be submitted as GitHub pull requests.  These can come from the editors or from WG members.</p>
+        <p>Chairs are responsible for determining whether or not there is WG consensus for the changes contained in a pull request.
       <p>Editors are responsible for “curating” the pull requests to reject frivolous ones and substantive ones that the Chairs have determined do not comply with the IPR policies.</p>
-      <p>In cases where the editors make substantive changes without WG consensus, those changes must be labelled as provisional. The chairs are responsible for resolving the status of such changes.
-    </div>
+      <p>In cases where the editors make substantive changes without WG consensus, those changes must be labelled as provisional. The chairs are responsible for resolving the status of such changes.</p>
 
-    <div class="patent">
-      <h2 id="patentpolicy">Patent Policy</h2>
+        <p>
+          When the Chair puts a question and observes dissent, after due consideration of different opinions, the Chair should record a decision (possibly after a formal vote) and any objections, and move on.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
 
-        <p>This Working Group operates under the <a href="/Consortium/Patent-Policy-20040205/">W3C
-        Patent Policy</a> (5 February 2004 Version). To promote the
-        widest adoption of Web standards, W3C seeks to issue
-        Recommendations that can be implemented, according to this
-        policy, on a Royalty-Free basis.</p>
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email and/or web-based survey), with a response period from one week to 10 working days, depending on the chair's evaluation of the group consensus on the issue.
 
-        <p>For more information about disclosure obligations for
-        this group, please see the <a href="/2004/01/pp-impl/">W3C
-        Patent Policy Implementation</a>.</p>
-
-
-    </div>
-
+          If no objections are raised on the mailing list by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available, or unless reopened at the discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/policies#Votes">W3C Process Document (Section 3.4, Votes)</a>, and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
 
 
-    <h2 id="about">About this Charter</h2>
 
-    <p>This charter for the Web Real-Time Communications Working Group has been created according to
-    <a href="/Consortium/Process/groups#GAGeneral">section
-    6.2</a> of the <a href="/Consortium/Process">Process
-    Document</a>.   In the event of a
-    conflict between this document or the provisions of any charter
-    and the W3C Process, the W3C Process shall take precedence.</p>
+      <section id="patentpolicy">
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://w3.org/Consortium/Patent-Policy-20040205/">W3C Patent Policy</a> (5 February 2004 Version). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
 
-    <p>This charter updates and replaces the <a href="http://www.w3.org/2011/04/webrtc-charter.html">first WebRTC Working Group charter</a> approved in 2011.</p>
-    <hr/>
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+        </p>
+      </section>
 
-    <address>François Daoust and Dominique Hazaël-Massieux, based on initial input from Harald Alvestrand
-    </address>
 
-    <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2015 <a href="/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved.</p>
 
-</body>
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p class="issue">Should we switch to <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a>?</p>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-documents">W3C Document license</a>  for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/groups#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/2017/Process-20170301/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/2011/04/webrtc-charter.html">Initial Charter</a>
+                </th>
+                <td>
+                  5 May 2011
+                </td>
+                <td>
+                  30 September 2015
+                </td>
+                <td>
+                  N/A
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="http://www.w3.org/2015/07/webrtc-charter.html">Rechartered</a>
+                </th>
+                <td>
+                  27 July 2015
+                </td>
+                <td>
+                  31 March 2018
+                </td>
+                <td>
+                  This charter reflected the actual split of the various features identified in well-defined specifications, and added <span class="new">WebRTC NV</span> in scope for the group.
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo">Rechartered</a>
+                </th>
+                <td>
+                  <span class="todo">@@@</span>
+                </td>
+                <td>
+                  <span class="todo">@@@</span>
+                </td>
+                <td>
+                  <span class="todo">@@@</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <address>
+        <a href="mailto:dom@w3.org">Dominique Hazael-Massieux</a>, <a href="mailto:vivien@w3.org">Vivien Lacourba</a></i>
+      </address>
+
+      <p class="copyright">
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+        2011-2018
+        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (
+        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="https://www.keio.ac.jp/">Keio</a>,
+        <a href="http://ev.buaa.edu.cn/">Beihang</a>
+        ), All Rights Reserved.
+
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+      </p>
+    </footer>
+
+  </body>
 </html>
