@@ -231,20 +231,9 @@
 
           <p>The Working Group has already started and will continue work on the following specifications: </p>
           <dl>
-            <dt id="927" class="spec"><a href="https://www.w3.org/TR/webrtc/" rel="versionof">WebRTC 1.0: Real-time Communication Between Browsers</a></dt>
-            <dd>JavaScript APIs to allow media and data to be sent to and received from another browser or device implementing the appropriate set of real-time protocols</dd>
-            <dd>Adopted Candidate Recommendation: <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">Candidate Recommendation 02 November 2017</a></dd>
-            <dd>Reference Draft:  <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">Candidate Recommendation 02 November 2017</a><br>
-              associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2017Nov/0001.html"> Call for Exclusion</a> on 02 November 2017
-              ended on 01 January 2018<br>Produced under <a href="https://www.w3.org/2015/07/webrtc-charter.html">2015 WebRTC Working Group Charter</a></dd>
-
-            <dt id="989" class="spec"><a href="https://www.w3.org/TR/mediacapture-streams/" rel="versionof">Media Capture and Streams</a></dt>
-            <dd>JavaScript APIs that allow local media, including audio and video, to be requested from a platform</dd>
-            <dd>Adopted Candidate Recommendation: <a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Candidate Recommendation 03 October 2017</a></dd>
-            <dd>Reference Draft: 
-              <a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Candidate Recommendation 03 October 2017</a><br>
-                associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2017Oct/0000.html"> Call for Exclusion</a> on 03 October 2017
-                ended on 02 December 2017<br>Produced under <a href="https://www.w3.org/2015/07/webrtc-charter.html">2015 WebRTC Working Group Charter</a></dd>
+            <dt class="spec"><a href="https://www.w3.org/TR/webrtc-identity/">Identity for WebRTC 1.0</a></dt>
+            <dd>A JavaScript API to allow an application using WebRTC to assert an identity, and to mark media streams as only viewable by another identity</dd>
+            <dd class="todo">Adopted Working Draft</dd>
             <dt id="1051" class="spec"><a href="https://www.w3.org/TR/mediastream-recording/" rel="versionof">MediaStream Recording</a></dt>
             <dd>a JavaScript API to record MediaStreams</dd>
             <dd>Adopted Working Draft: <a href="https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/">21 June 2017</a></dd>
@@ -297,21 +286,25 @@ ended on 05 July 2013<br>Produced under <a href="https://www.w3.org/2011/04/webr
             <dt class="spec"><a href="https://w3c.github.io/webrtc-dscp-exp/">DSCP Control API</a></dt>
             <dd>An extension to the WebRTC 1.0 API to enable experimentation with QoS marking.</dd>
             <dd>Draft state: <a href="https://w3c.github.io/webrtc-dscp-exp/">Editor's draft</a></dd>
+            <dt class="spec"><a href="https://www.w3.org/TR/mst-content-hint/">MediaStreamTrack Content Hints</a></dt>
+            <dd>An extension to <cite>Media Capture and Streams</cite> to provide a hint on how to encode or process track media based on the type of content that is being consumed</dd>
+            <dd class="todo">Adopted Working Draft</dd>
+            <dt class="spec todo">Scalable Video Coding (SVC) Extension for WebRTC</dt>
+            <dd>An extension to the WebRTC 1.0 API to enable user agents to support scalable video coding (SVC)</dd>
+            <dd class="todo">Adopted Working Draft</dd>
           </dl>
+
+          <p>The Working Group will maintain the following W3C Recommendations (gathering of errata, publication of new editions incorporating errata):</p>
+          <ul>
+            <li><a href="https://www.w3.org/TR/webrtc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
+            <li><a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a></li>
+          </ul>
 
 <p>The preferred mode of adding new features is by means of extension specifications, rather than new features in the existing specs. At appropriate times, the WG may choose to redistribute the work between chartered documents - by splitting, merging or repartitioning the work as appropriate.</p>
 
-<p>By the end of the charter period, the WG expects to have a small number of "core" specifications, which allows useful applications to be built using only those specifications, and a series of "extension" specifications that extend the applicability of the APIs specified to more applications.</p>
+<p>This work is done in collaboration with the IETF. The W3C defines APIs to ensure that application developers can control the components or the architecture for selection and profiling of the wire protocols that have been produced by the IETF Real-Time Communication in WEB-browsers (RTCWeb) Working Group. While the specified API Functions will not constrain implementations into supporting a specific profile, they will be compatible with the Profile that is specified by the RTCWeb Working Group.</p>
 
-<p>This work will be done in collaboration with the IETF. The W3C will define APIs to ensure that application developers can control the components or the architecture for selection and profiling of the wire protocols that have been produced by the IETF Real-Time Communication in WEB-browsers (RTCWeb) Working Group. While the specified API Functions will not constrain implementations into supporting a specific profile, they will be compatible with the Profile that is specified by the RTCWeb Working Group.</p>
-
-<p>The highest priority of the group in this charter period will be to get the core recommendations progressed towards Recommendation status.</p>
-
-<p>As the name indicates, WebRTC 1.0: Real-time Communication Between Browsers is a first version of APIs for real-time communication, sometimes referred to as the PeerConnection API. The activities in the ORTC (Object Real-time Communications) Community Group indicate that there is interest in additional APIs to provide more direct control over WebRTC than what the PeerConnection API offers.</p>
-
-<p>In recognition of this interest, the Working Group intends to start work on a new set of object-oriented APIs for real-time communication.</p>
-
-<p>In developing these new APIs, the Working Group will adhere to the following principles:</p>
+<p>In addition to the work items identified above, the Working Group will consider developing further extensions to the WebRTC 1.0 core API. In developing these new APIs, the Working Group will adhere to the following principles:</p>
 
 <ul>
 <li>Direct control: The new APIs are intended to provide direct control over the details of real-time communication, where the application can directly specify how information should be transmitted, without any built-in negotiation semantics.</li>
@@ -320,8 +313,7 @@ ended on 05 July 2013<br>Produced under <a href="https://www.w3.org/2011/04/webr
 <li>Feature independence: Features may be introduced in the new APIs that are not available when using the PeerConnection API.</li>
 </ul>
 
-<p>A use-case document will be developed to clarify the functionality that the new APIs are to provide.</p>				
-<p>The Working Group will take the work done by the ORTC Community Group as a source of input, and when contemplating similar APIs in the Working Group, make efforts to align with the ORTC CG on API methodologies and nomenclature. This may include scheduled design meetings with relevant WG and CG stakeholders to foster convergence of the APIs.</p>
+<p>A <a href="https://www.w3.org/TR/webrtc-nv-use-cases/">use-case document</a> is maintained  to identify the functionality that the new APIs are to provide.</p>
 
 <p>The specified API Functions and the requirements on their implementation must offer functionality that ensures that users' expectations of privacy and control over their devices are met - this includes, but is not limited to, ensuring that users can control what local  devices an application can access for capturing media, and are able to at any time revoke that access.</p>
 
@@ -353,18 +345,9 @@ will be developed in coordination with the <a href="https://www.w3.org/WAI/APA/"
           <p>Given sufficient resources, this Working Group should review other Working Groups' deliverables that are identified as being relevant to the Working Group's mission. </p>
         </div>
 
-        <div id="timeline">
+        <div id="timeline" class="todo">
           <h3>Timeline</h3>
-          <p>The <a href="https://www.w3.org/2011/04/webrtc/">group's home page</a> provides current data about all of the group's specifications. Although the group expects all of its active deliverables to progress during this charter period, the charter does not include detailed milestone data for each specification because such data is speculative and easily becomes out of date. The Working Group does expect the following to occur:</p>
-            <ul>
-              <li>Media Capture and Streams: updated Candidate Recommendation in Q2 2018, Proposed Recommendation in Q4 2018, Recommendation in Q1 2019</li>
-              <li>WebRTC 1.0: updated Candidate Recommendation in Q4 2018, Proposed Recommendation in Q3 2019, Recommendation in Q4 2019</li>
-              <li>MediaStream Recording: Candidate Recommendation in Q3 2018</li>
-              <li>Media Capture From DOM Element: Candidate Recommendation in Q3 2018</li>
-              <li>Screen Capture: Candidate Recommendation in Q4 2018</li>
-              <li>Identifiers for WebRTC Statistics: Candidate Recommendation in Q2 2018, Proposed Recommendation in Q3 2019, Recommendation in Q4 2019</li>
-              <li>Object-oriented APIs: First Public Working Draft in Q3 2018, Candidate Recommendation in Q2 2019</li>
-            </ul>
+          <p>The <a href="https://www.w3.org/2011/04/webrtc/">group's home page</a> provides current data about all of the group's specifications. Although the group expects all of its active deliverables to progress during this charter period, the charter does not include detailed milestone data for each specification because such data is speculative and easily becomes out of date.</p>
         </div>
       </section>
 
