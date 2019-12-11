@@ -154,14 +154,8 @@
         <h2>Scope</h2>
 	<p>Enabling real-time communications between Web browsers require the following client-side technologies to be available:</p>
         <ul>
-          <li>API functions to explore device capabilities, e.g. camera, microphone, speakers,</li>
-          <li>API functions to capture media from local devices (e.g. camera and microphone, but also output devices such as a screen),</li>
-          <li>API functions for encoding and other processing of those media streams,</li>
-          <li>API functions for accessing the data in these media streams,</li>
           <li>API functions for transferring data between peers,</li>
           <li>API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal,</li>
-          <li>API functions for decoding and processing (including echo canceling, stream synchronization and a number of other functions) of those streams at the incoming end,</li>
-          <li>Delivery to the user of those media streams via local screens and audio output devices (partially covered with HTML5).</li>
         </ul>
         The working group will address issues related to using these functions
         in various contexts on the Web platform, such as:
@@ -175,6 +169,17 @@
             or other security mechanisms that should impact the use of these
             APIs
           </li>
+        </ul>
+        <p>Until another group can take it over, the working group will also complete and maintain specifications that address the following functions:</p>
+        <ul>
+          <li>API functions to explore device capabilities, e.g. camera, microphone, speakers,</li>
+          <li>API functions to capture media from local devices (e.g. camera and microphone, but also output devices such as a screen),</li>
+          <li>API functions for encoding and other processing of those media streams,</li>
+          <li>API functions for accessing the data in these media streams,</li>
+
+          <li>API functions for decoding and processing (including echo canceling, stream synchronization and a number of other functions) of those streams at the incoming end,</li>
+          <li>Delivery to the user of those media streams via local screens and audio output devices (partially covered with HTML5).</li>
+
         </ul>
 
         <div id="section-out-of-scope">
@@ -209,14 +214,6 @@
 
           <p>The Working Group will deliver specifications that cover at least the following functions, unless they are found to be fully specified within other Working Groups' finished results:</p>
           <dl>
-            <dt>Media Stream Functions</dt>
-            <dd>API functions to manipulate media streams for interactive real-time communications, connecting various processing functions to each other, and to media devices and network connections, including media manipulation functions for e.g. allowing to synchronize streams. Supplementary functions such as recording of media streams are also in scope.</dd>
-            <dt>Audio Stream Functions</dt>
-            <dd>An extension of the Media Stream Functions to process audio streams, to enable features such as automatic gain control, mute functions and echo cancellation.</dd>
-            <dt>Video Stream Functions</dt>
-            <dd>An extension of the Media Stream Functions to process video streams, to enable features such as bandwidth limiting, image manipulation or "video mute".</dd>
-            <dt>Functional Component Functions</dt>
-            <dd>API functions that allow to query for the components present in an implementation, instantiate them, and connect them to media streams.</dd>
             <dt>Data Access Functions</dt>
             <dd>API functions that allow Web applications to access and manipulate data in media streams.</dd>
             <dt>Data Transfer Functions</dt>
@@ -227,6 +224,18 @@
             <dd>API functions to provide interfaces that enable the conveyance of parameters necessary to establish peer to peer connections, based on the protocols selected by the IETF RTCWeb Working Group. Included in this category are also API functions to allow identification of the peer.</dd>
           </dl>
 
+          <p>The Working Group will deliver specifications that cover the following functions until another group becomes available to take that work over:</p>
+          <dl>
+            <dt>Media Stream Functions</dt>
+            <dd>API functions to manipulate media streams for interactive real-time communications, connecting various processing functions to each other, and to media devices and network connections, including media manipulation functions for e.g. allowing to synchronize streams. Supplementary functions such as recording of media streams are also in scope.</dd>
+            <dt>Audio Stream Functions</dt>
+            <dd>An extension of the Media Stream Functions to process audio streams, to enable features such as automatic gain control, mute functions and echo cancellation.</dd>
+            <dt>Video Stream Functions</dt>
+            <dd>An extension of the Media Stream Functions to process video streams, to enable features such as bandwidth limiting, image manipulation or "video mute".</dd>
+            <dt>Functional Component Functions</dt>
+            <dd>API functions that allow to query for the components present in an implementation, instantiate them, and connect them to media streams.</dd>
+          </dl>
+          
           <p>The Working Group may decide to group the specified functions in one or more specifications, and to develop extensions to its existing specifications to bring additional functionality identified as needed.</p>
 
           <p>The Working Group has already started and will continue work on the following specifications: </p>
@@ -234,6 +243,26 @@
             <dt class="spec"><a href="https://www.w3.org/TR/webrtc-identity/">Identity for WebRTC 1.0</a></dt>
             <dd>A JavaScript API to allow an application using WebRTC to assert an identity, and to mark media streams as only viewable by another identity</dd>
             <dd class="todo">Adopted Working Draft</dd>
+            <dt id="1197" class="spec"><a href="https://www.w3.org/TR/webrtc-stats/" rel="versionof">Identifiers for WebRTC's Statistics API</a></dt>
+            <dd>JavaScript APIs that allow access to statistical information about a peer-to-peer connection established via the WebRTC API</dd>
+            <dd>Adopted Working Draft: <a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180131/">31 January 2018</a></dd>
+            <dd>Reference Draft: 
+              <a href="https://www.w3.org/TR/2014/WD-webrtc-stats-20141021/">Working Draft 21 October 2014</a><br>
+              associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2014Oct/0007.html"> Call for Exclusion</a> on 23 October 2014
+              ended on 20 March 2015<br>Produced under <a href="https://www.w3.org/2011/04/webrtc-charter.html">2011 WebRTC Working Group Charter</a></dd>
+            <dt class="spec"><a href="https://w3c.github.io/webrtc-dscp-exp/">DSCP Control API</a></dt>
+            <dd>An extension to the WebRTC 1.0 API to enable experimentation with QoS marking.</dd>
+            <dd>Draft state: <a href="https://w3c.github.io/webrtc-dscp-exp/">Editor's draft</a></dd>
+            <dt class="spec"><a href="https://www.w3.org/TR/mst-content-hint/">MediaStreamTrack Content Hints</a></dt>
+            <dd>An extension to <cite>Media Capture and Streams</cite> to provide a hint on how to encode or process track media based on the type of content that is being consumed</dd>
+            <dd class="todo">Adopted Working Draft</dd>
+            <dt class="spec todo">Scalable Video Coding (SVC) Extension for WebRTC</dt>
+            <dd>An extension to the WebRTC 1.0 API to enable user agents to support scalable video coding (SVC)</dd>
+            <dd class="todo">Adopted Working Draft</dd>
+
+          </dl>
+          <p>The Working Group will continue work on the following specifications until another group take them over:</p>
+          <dl>
             <dt id="1051" class="spec"><a href="https://www.w3.org/TR/mediastream-recording/" rel="versionof">MediaStream Recording</a></dt>
             <dd>a JavaScript API to record MediaStreams</dd>
             <dd>Adopted Working Draft: <a href="https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/">21 June 2017</a></dd>
@@ -255,13 +284,6 @@ ended on 05 July 2013<br>Produced under <a href="https://www.w3.org/2011/04/webr
               <a href="https://www.w3.org/TR/2015/WD-mediacapture-depth-20151208/">Working Draft 08 December 2015</a><br>
               associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2014Oct/0001.html"> Call for Exclusion</a> on 07 October 2014
               ended on 06 March 2015<br>Produced under <a href="https://www.w3.org/2011/04/webrtc-charter.html">2011 WebRTC Working Group Charter</a></dd>
-            <dt id="1197" class="spec"><a href="https://www.w3.org/TR/webrtc-stats/" rel="versionof">Identifiers for WebRTC's Statistics API</a></dt>
-            <dd>JavaScript APIs that allow access to statistical information about a peer-to-peer connection established via the WebRTC API</dd>
-            <dd>Adopted Working Draft: <a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180131/">31 January 2018</a></dd>
-            <dd>Reference Draft: 
-              <a href="https://www.w3.org/TR/2014/WD-webrtc-stats-20141021/">Working Draft 21 October 2014</a><br>
-              associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2014Oct/0007.html"> Call for Exclusion</a> on 23 October 2014
-              ended on 20 March 2015<br>Produced under <a href="https://www.w3.org/2011/04/webrtc-charter.html">2011 WebRTC Working Group Charter</a></dd>
             <dt id="1215" class="spec"><a href="https://www.w3.org/TR/audio-output/" rel="versionof">Audio Output Devices API</a></dt>
             <dd>JavaScript APIs that let a Web application manage how audio is rendered on the user audio output devices</dd>
             <dd>Adopted Candidate Recommendation: <a href="https://www.w3.org/TR/2017/CR-audio-output-20171003/">Candidate Recommendation 03 October 2017</a></dd>
@@ -283,15 +305,6 @@ ended on 05 July 2013<br>Produced under <a href="https://www.w3.org/2011/04/webr
               <a href="https://www.w3.org/TR/2015/WD-mediacapture-fromelement-20150219/">Working Draft 19 February 2015</a><br>
               associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Feb/0009.html"> Call for Exclusion</a> on 19 February 2015
               ended on 19 July 2015<br>Produced under <a href="https://www.w3.org/2011/04/webrtc-charter.html">2011 WebRTC Working Group Charter</a></dd>
-            <dt class="spec"><a href="https://w3c.github.io/webrtc-dscp-exp/">DSCP Control API</a></dt>
-            <dd>An extension to the WebRTC 1.0 API to enable experimentation with QoS marking.</dd>
-            <dd>Draft state: <a href="https://w3c.github.io/webrtc-dscp-exp/">Editor's draft</a></dd>
-            <dt class="spec"><a href="https://www.w3.org/TR/mst-content-hint/">MediaStreamTrack Content Hints</a></dt>
-            <dd>An extension to <cite>Media Capture and Streams</cite> to provide a hint on how to encode or process track media based on the type of content that is being consumed</dd>
-            <dd class="todo">Adopted Working Draft</dd>
-            <dt class="spec todo">Scalable Video Coding (SVC) Extension for WebRTC</dt>
-            <dd>An extension to the WebRTC 1.0 API to enable user agents to support scalable video coding (SVC)</dd>
-            <dd class="todo">Adopted Working Draft</dd>
           </dl>
 
           <p>The Working Group will maintain the following W3C Recommendations (gathering of errata, publication of new editions incorporating errata):</p>
