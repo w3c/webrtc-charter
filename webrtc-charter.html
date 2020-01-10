@@ -100,7 +100,7 @@
               End date
             </th>
             <td>
-              <i class="todo">31 March 2020</i>
+              <i class="todo">31 March 2022</i>
             </td>
           </tr>
 
@@ -222,6 +222,8 @@
               <br>The WG will consider any necessary API changes or extensions to enable use of more than one data transfer protocol to support the data transfer functions.</dd>
             <dt>P2P Connection Functions</dt>
             <dd>API functions to provide interfaces that enable the conveyance of parameters necessary to establish peer to peer connections, based on the protocols selected by the IETF RTCWeb Working Group. Included in this category are also API functions to allow identification of the peer.</dd>
+            <dt>Network Management Functions</dt>
+            <dd>API functions to provide control on network traffic characteristics such as congestion control, bandwidth limitation, or latency.</dd>
           </dl>
 
           <p>The Working Group will deliver specifications that cover the following functions until another group becomes available to take that work over:</p>
@@ -231,9 +233,11 @@
             <dt>Audio Stream Functions</dt>
             <dd>An extension of the Media Stream Functions to process audio streams, to enable features such as automatic gain control, mute functions and echo cancellation.</dd>
             <dt>Video Stream Functions</dt>
-            <dd>An extension of the Media Stream Functions to process video streams, to enable features such as bandwidth limiting, image manipulation or "video mute".</dd>
+            <dd>An extension of the Media Stream Functions to process video streams, to enable features such as backpressure control, image manipulation or "video mute".</dd>
             <dt>Functional Component Functions</dt>
             <dd>API functions that allow to query for the components present in an implementation, instantiate them, and connect them to media streams.</dd>
+            <dt>Data Access Functions</dt>
+            <dd>API functions that allow Web applications to access and manipulate data in media streams.</dd>
           </dl>
           
           <p>The Working Group may decide to group the specified functions in one or more specifications, and to develop extensions to its existing specifications to bring additional functionality identified as needed.</p>
@@ -326,7 +330,7 @@ ended on 05 July 2013<br>Produced under <a href="https://www.w3.org/2011/04/webr
 <li>Feature independence: Features may be introduced in the new APIs that are not available when using the PeerConnection API.</li>
 </ul>
 
-<p>A <a href="https://www.w3.org/TR/webrtc-nv-use-cases/">use-case document</a> is maintained  to identify the functionality that the new APIs are to provide.</p>
+<p>A <a href="https://www.w3.org/TR/webrtc-nv-use-cases/">use-case document</a> is maintained  to identify the functionality that needs new API for realization.</p>
 
 <p>The specified API Functions and the requirements on their implementation must offer functionality that ensures that users' expectations of privacy and control over their devices are met - this includes, but is not limited to, ensuring that users can control what local  devices an application can access for capturing media, and are able to at any time revoke that access.</p>
 
