@@ -13,6 +13,8 @@ versions of the document to consider:
 * SPECNAME (Editors' draft)
 * SPECNAME-extensions
 
+Note: webrtc-pc's extensions document is named webrtc-extensions, not webrtc-pc-extensions.
+
 ## Adding new features
 
 In order to have a new feature considered for inclusion, write it up as an extension spec
@@ -43,7 +45,7 @@ In order to be considered for integration, a new extension must have:
 * Reasonable test coverage
 * Two passing implementation
 
-## Merging to the REC branch
+## Merging to the editor's copy on the REC branch
 
 Once a feature is cleared for integration, a pull request is made for moving the feature
 into the editors' copy of the specification and removing it from SPECNAME-extensions.
