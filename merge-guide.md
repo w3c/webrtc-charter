@@ -6,12 +6,12 @@ is aiming for that status.
 This means that we should revise it no more often than every 6 months or so, and only
 incorporate new features that are appropriate for "recycle at REC".
 
-This means that we have, at any given moment, there will be 3 different
-versions of the document to consider - for the example of WebRTC-PC:
+This means that we have, at any given moment, 3 different
+versions of the document to consider:
 
-* WebRTC-PC (REC)
-* WebRTC-PC (Editors' draft)
-* WebRTC-Extensions
+* SPECNAME (REC)
+* SPECNAME (Editors' draft)
+* SPECNAME-extensions
 
 ## Incubation
 
