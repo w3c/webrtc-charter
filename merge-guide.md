@@ -51,7 +51,7 @@ into the editors' copy of the specification and removing it from SPECNAME-extens
 At the same time, its tests should be moved from where they live into the spec's WPT suite.
 
 
-## Changes not subject to incubation
+## Changes that bypass the -extensions stage
 
 Changes that are pure bug fixes, editorial changes, or patch significant security holes in
 the specification, can be merged directly to the editors' copy at any time. Such issues should be filed directly
