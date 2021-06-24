@@ -13,7 +13,7 @@ versions of the document to consider:
 * SPECNAME (Editors' draft)
 * SPECNAME-extensions
 
-## Incubation
+## Adding new features
 
 In order to have a new feature considered for inclusion, write it up as an extension spec
 or as a pull request against SPECNAME-extensions.
