@@ -1,7 +1,7 @@
 # Procedure for adding new features to a REC-level WEBRTC specification
 
 The WebRTC-PC spec is now a W3C Rec, and the Mediacapture-Main spec
-is aiming for tht status.
+is aiming for that status.
 
 This means that we should revise it no more often than every 6 months or so, and only
 incorporate new features that are appropriate for "recycle at REC".
@@ -56,4 +56,3 @@ At the same time, its tests should be moved from where they live into the spec's
 Changes that are pure bug fixes, editorial changes, or patch significant security holes in
 the specification, can be merged directly to the editors' copy at any time. Such issues should be filed directly
 on the spec's repo.
-
