@@ -23,7 +23,7 @@ or as a pull request against SPECNAME-extensions.
 For features that are "large" in some sense (large spec, need their own explainer, may have
 different people interested), extension specs are preferred. For extensions that are
 "small" (add a few methods, extend an argument list or enum, the function description
-is explanation enough), PRs against SPECNAME-extensions is preferred.
+is explanation enough), pull requests against SPECNAME-extensions is preferred.
 
 In order to explore whether such an extension is a viable idea, file an issue on the
 SPECNAME-extensions repo. (This needs to be done when issues are found with the proposed
