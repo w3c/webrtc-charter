@@ -78,7 +78,7 @@
       <p class="mission">The
     <strong>mission</strong> of the Web Real-Time Communications Working Group is to define client-side APIs to enable Real-Time Communications in Web browsers.</p>
 
-      <p>These APIs should enable building applications that can be run inside a browser, requiring no extra downloads or plugins, that allow communication between parties using audio, video and supplementary real-time communication, without having to use intervening servers (unless needed for firewall traversal, or for providing intermediary services). APIs enabling supplementary functions, such as recording, image capture and screen sharing are also in scope.</p>
+      <p>These APIs should enable building applications that can be run inside a browser, requiring no extra downloads or plugins, that allow communication between parties using audio, video and supplementary real-time communication, without having to use intervening servers (unless needed for firewall traversal or for providing intermediary services). APIs enabling supplementary functions, such as recording, image capture, and screen sharing are also in scope.</p>
 
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/groups/wg/webrtc/join">Join the Web Real-Time Communications Working Group</a>.</p>
@@ -158,18 +158,18 @@
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-	<p>Enabling real-time communications between Web browsers require the following client-side technologies to be available:</p>
+	<p>Enabling real-time communications between Web browsers requires the following client-side technologies to be available:</p>
         <ul>
-          <li>API functions for transferring data between peers,</li>
-          <li>API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal,</li>
+          <li>API functions for transferring data between peers, and</li>
+          <li>API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal.</li>
         </ul>
         The working group will address issues related to using these functions
         in various contexts on the Web platform, such as:
         <ul>
-          <li>Traditional Web pages</li>
-          <li>Web Workers of various types</li>
-          <li>Iframes, with appropriate access controls</li>
-          <li>Applications that span multiple pages</li>
+          <li>Traditional Web pages,</li>
+          <li>Web Workers of various types,</li>
+          <li>Iframes, with appropriate access controls, and</li>
+          <li>Applications that span multiple pages.</li>
           <li>
             Pages, workers and frames specifying content security policies
             or other security mechanisms that should impact the use of these
@@ -183,14 +183,14 @@
           <li>API functions for encoding and other processing of those media streams,</li>
           <li>API functions for accessing the data in these media streams,</li>
 
-          <li>API functions for decoding and processing (including echo canceling, stream synchronization and a number of other functions) of those streams at the incoming end,</li>
+          <li>API functions for decoding and processing (including echo canceling, stream synchronization, and a number of other functions) of those streams at the incoming end, and</li>
           <li>Delivery to the user of those media streams via local screens and audio output devices (partially covered with HTML5).</li>
 
         </ul>
 
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
-          <p>The definition of the network protocols used to establish the connections between peers is out of scope for this group; in general, it is expected that protocols considerations will be handled in the IETF.</p>
+          <p>The definition of the network protocols used to establish the connections between peers is out of scope.  In general, it is expected that protocol considerations will be handled in the IETF.</p>
 	  <p>The definition of any new codecs for audio and video is out of scope.</p>
         </div>
 
