@@ -1,7 +1,7 @@
 # Procedure for adding new features to a REC-level WEBRTC specification
 
-The WebRTC-PC spec is now a W3C Rec, and the Mediacapture-Main spec
-is aiming for that status.
+The WebRTC-PC spec is now a W3C Rec, and the Mediacapture-Main and
+Screen-Capture specs are aiming for that status.
 
 This means that we should revise it no more often than every 6 months or so, and only
 incorporate new features that are appropriate for "recycle at REC".
